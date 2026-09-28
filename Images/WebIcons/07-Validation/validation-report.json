@@ -1,0 +1,37 @@
+{
+  "product": "MIA_EVENTS_ICON_SocialMedia",
+  "generatedOn": "26 September 2026",
+  "generator": "17 Compressor",
+  "status": "PASS",
+  "checks": {
+    "faviconPngSizes": [
+      16,
+      32,
+      48
+    ],
+    "icoFrames": [
+      16,
+      32,
+      48
+    ],
+    "appleTouchIcon": "180x180",
+    "pwaAny": [
+      "192x192",
+      "512x512"
+    ],
+    "pwaMaskable": [
+      "192x192",
+      "512x512",
+      "1024x1024"
+    ],
+    "maskableBackgroundOpaque": true,
+    "monochromeSvgIncluded": true,
+    "manifestPurposes": [
+      "any",
+      "maskable",
+      "monochrome"
+    ],
+    "htmlSnippetIncluded": true,
+    "sourceProcessedLocally": true
+  }
+}

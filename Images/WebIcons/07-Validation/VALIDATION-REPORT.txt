@@ -1,0 +1,16 @@
+17 COMPRESSOR · ICON PACK VALIDATION
+
+Project: MIA_EVENTS_ICON_SocialMedia
+Generated: 26 September 2026
+Status: PASS
+
+PASS  Favicon PNG sizes: 16, 32, 48
+PASS  Multi-size ICO frames: 16, 32, 48
+PASS  Apple Touch icon: 180 x 180
+PASS  PWA any icons: 192, 512
+PASS  PWA maskable icons: 192, 512, 1024
+PASS  Maskable background is opaque
+PASS  Monochrome SVG included
+PASS  Manifest purposes: any, maskable, monochrome
+PASS  HTML integration snippet included
+PASS  Source processed locally

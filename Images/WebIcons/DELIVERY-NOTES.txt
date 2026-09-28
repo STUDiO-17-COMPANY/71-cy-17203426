@@ -1,0 +1,13 @@
+MIA_EVENTS_ICON_SocialMedia · WEB ICON DELIVERY
+
+Start by opening START-HERE.html.
+
+For the client:
+- Icon-Pack-Preview.png presents the complete visual system.
+- 00-Master through 07-Validation contain organised deliverables.
+
+For the developer:
+- Use MIA_EVENTS_ICON_SocialMedia-developer-ready.zip, or copy the contents of Developer-Ready to the website public/root folder.
+- Copy icon-links.html into the page <head>.
+
+Generated 26 September 2026 with 17 Compressor. All processing was local.
