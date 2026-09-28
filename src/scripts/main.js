@@ -27,6 +27,7 @@ const translations = {
     "actions.call": "Call MIA Events",
     "actions.consultation": "Book a consultation",
     "actions.whatsapp": "WhatsApp us",
+    "whatsapp.consultationMessage": "Hello MIA Events, I would like to book a consultation for an upcoming event.",
     "actions.bookService": "Book this service",
     "actions.discussGifts": "Discuss your gifts",
     "actions.skipIntro": "Skip intro",
@@ -167,6 +168,7 @@ const translations = {
     "actions.call": "Καλέστε τη MIA Events",
     "actions.consultation": "Κλείστε συμβουλευτική",
     "actions.whatsapp": "Μιλήστε μας στο WhatsApp",
+    "whatsapp.consultationMessage": "Γεια σας MIA Events, θα ήθελα να κλείσω μια συμβουλευτική για μια επερχόμενη εκδήλωση.",
     "actions.bookService": "Κλείστε την υπηρεσία",
     "actions.discussGifts": "Συζητήστε τα δώρα σας",
     "actions.skipIntro": "Παράλειψη εισαγωγής",
@@ -418,6 +420,9 @@ function translatePage(language) {
   });
   document.querySelectorAll("[data-language-full]").forEach((element) => {
     element.textContent = language === "el" ? "English" : "Ελληνικά";
+  });
+  document.querySelectorAll("[data-whatsapp-consultation]").forEach((link) => {
+    link.href = `https://wa.me/${PHONE}?text=${encodeURIComponent(dictionary["whatsapp.consultationMessage"])}`;
   });
 
   document.title = dictionary["meta.title"];
