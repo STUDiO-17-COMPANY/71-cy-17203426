@@ -1,6 +1,6 @@
 import "../styles/style.css";
 
-const PHONE = "35799516834";
+const PHONE = "35796848113";
 const STORAGE_KEY = "mia-language";
 
 const translations = {
@@ -16,6 +16,7 @@ const translations = {
     "a11y.closeMenu": "Close menu",
     "a11y.closeDialog": "Close consultation form",
     "a11y.scrollApproach": "Scroll to our approach",
+    "a11y.brandIntro": "MIA Events brand introduction",
     "nav.home": "Home",
     "nav.approach": "Our approach",
     "nav.services": "Services",
@@ -28,6 +29,7 @@ const translations = {
     "actions.whatsapp": "WhatsApp us",
     "actions.bookService": "Book this service",
     "actions.discussGifts": "Discuss your gifts",
+    "actions.skipIntro": "Skip intro",
     "hero.experience": "years of experience",
     "hero.title": "Corporate Events",
     "hero.titleSecond": "Experiences",
@@ -50,7 +52,8 @@ const translations = {
     "proof.personalTitle": "Coordination that stays close",
     "proof.personalText": "Direct communication throughout the project.",
     "gallery.eyebrow": "Made for meaningful moments",
-    "gallery.titleStart": "Elevating enterprise",
+    "gallery.titlePrefix": "Elevating",
+    "gallery.titleHighlight": "enterprise",
     "gallery.titleEnd": "and executive gatherings.",
     "gallery.images.conference": "Corporate conference with a keynote stage",
     "gallery.images.gala": "Formal corporate dinner setting",
@@ -63,9 +66,10 @@ const translations = {
     "gallery.captions.production": "Event production",
     "gallery.captions.offsite": "Leadership offsites",
     "services.eyebrow": "Our expertise",
-    "services.titleStart": "A complete service suite,",
+    "services.titlePrefix": "A",
+    "services.titleHighlight": "complete",
+    "services.titleSuffix": "service suite,",
     "services.titleEnd": "shaped around your objectives.",
-    "services.signature": "Signature service 07",
     "services.items.events.title": "Corporate Events & Parties",
     "services.items.events.text": "Galas, team celebrations, milestone events and company parties designed around your culture.",
     "services.items.conferences.title": "Conferences & Business Meetings",
@@ -78,9 +82,16 @@ const translations = {
     "services.items.design.text": "Event identity, stage design, décor, lighting, signage and details that make the experience feel cohesive.",
     "services.items.onsite.title": "On-Site Supervision",
     "services.items.onsite.text": "Dedicated event management to keep timelines, logistics and suppliers moving smoothly on the day.",
-    "services.items.gifts.title": "Corporate & Partner Gifts",
-    "services.items.gifts.text": "Tailored welcome baskets, personalised keepsakes and partner gifts that leave a thoughtful impression.",
-    "faq.title": "Questions before we begin?",
+    "services.items.employeeGifts.title": "Gifts for Employees",
+    "services.items.employeeGifts.text": "Thoughtful welcome, milestone and seasonal gifts created to recognise and delight your people.",
+    "services.items.partnerGifts.title": "Gifts for Partners",
+    "services.items.partnerGifts.text": "Refined, brand-aligned gifts that strengthen relationships with clients and business partners.",
+    "services.items.festive.title": "Festive Private Events",
+    "services.items.festive.text": "Beautifully coordinated private celebrations for festive seasons, milestones and special occasions.",
+    "services.ctaEyebrow": "Have something different in mind?",
+    "services.ctaTitle": "Let’s shape the right experience together.",
+    "faq.titlePrefix": "Questions before",
+    "faq.titleHighlight": "we begin?",
     "faq.items.types.question": "What types of corporate events does MIA organise?",
     "faq.items.types.answer": "We plan corporate celebrations, conferences, executive meetings, recurring team events, offsites and bespoke business experiences across Cyprus.",
     "faq.items.notice.question": "How early should we get in touch?",
@@ -89,6 +100,18 @@ const translations = {
     "faq.items.scope.answer": "Yes. We can manage the full experience or support a defined area such as venue sourcing, production, gifts or on-site coordination.",
     "faq.items.location.question": "Do you work across Cyprus?",
     "faq.items.location.answer": "Yes. We support events across the island and coordinate the right local partners for each location.",
+    "faq.items.budget.question": "Can you work within a defined budget?",
+    "faq.items.budget.answer": "Yes. We establish priorities early and recommend the right format, suppliers and production choices for your available budget.",
+    "faq.items.venue.question": "Can you help us find a venue?",
+    "faq.items.venue.answer": "Yes. We source and compare suitable venues based on location, capacity, style, logistics and budget.",
+    "faq.items.gifts.question": "Do you create custom corporate gifts?",
+    "faq.items.gifts.answer": "Yes. We develop employee and partner gifting concepts, including sourcing, personalisation, packaging and delivery coordination.",
+    "faq.items.private.question": "Do you organise private festive events?",
+    "faq.items.private.answer": "Yes. We coordinate selected private celebrations and festive experiences with the same care applied to our corporate work.",
+    "faq.items.day.question": "Who is present on the event day?",
+    "faq.items.day.answer": "A dedicated MIA coordinator oversees the agreed timeline, suppliers and key moments throughout the event.",
+    "faq.items.start.question": "What do you need from us to get started?",
+    "faq.items.start.answer": "An approximate date, guest count, location preference, budget range and the outcome or feeling you want to create are enough for an initial conversation.",
     "contact.eyebrow": "Start the conversation",
     "contact.titleStart": "Tell us what you are",
     "contact.titleHighlight": "planning next.",
@@ -97,6 +120,7 @@ const translations = {
     "contact.consultationLabel": "Consultation",
     "contact.consultationValue": "Send an event brief",
     "footer.tagline": "People-first corporate events across Cyprus.",
+    "footer.socialLabel": "MIA Events social media",
     "studio17.prefix": "Developed & maintained by",
     "studio17.ariaLabel": "Website developed and maintained by Studio 17",
     "booking.eyebrow": "Your event brief",
@@ -132,6 +156,7 @@ const translations = {
     "a11y.closeMenu": "Κλείσιμο μενού",
     "a11y.closeDialog": "Κλείσιμο φόρμας συμβουλευτικής",
     "a11y.scrollApproach": "Μετάβαση στη φιλοσοφία μας",
+    "a11y.brandIntro": "Εισαγωγή της MIA Events",
     "nav.home": "Αρχική",
     "nav.approach": "Η φιλοσοφία μας",
     "nav.services": "Υπηρεσίες",
@@ -144,6 +169,7 @@ const translations = {
     "actions.whatsapp": "Μιλήστε μας στο WhatsApp",
     "actions.bookService": "Κλείστε την υπηρεσία",
     "actions.discussGifts": "Συζητήστε τα δώρα σας",
+    "actions.skipIntro": "Παράλειψη εισαγωγής",
     "hero.experience": "χρόνια εμπειρίας",
     "hero.title": "Εταιρικές Εκδηλώσεις",
     "hero.titleSecond": "Εμπειρίες",
@@ -166,7 +192,8 @@ const translations = {
     "proof.personalTitle": "Συντονισμός που παραμένει κοντά σας",
     "proof.personalText": "Άμεση επικοινωνία καθ’ όλη τη διάρκεια του έργου.",
     "gallery.eyebrow": "Για στιγμές με σημασία",
-    "gallery.titleStart": "Αναβαθμίζουμε τις εταιρικές",
+    "gallery.titlePrefix": "Αναβαθμίζουμε τις",
+    "gallery.titleHighlight": "εταιρικές",
     "gallery.titleEnd": "και διοικητικές συναντήσεις.",
     "gallery.images.conference": "Εταιρικό συνέδριο με κεντρική σκηνή",
     "gallery.images.gala": "Επίσημο εταιρικό δείπνο",
@@ -179,9 +206,10 @@ const translations = {
     "gallery.captions.production": "Παραγωγή εκδηλώσεων",
     "gallery.captions.offsite": "Συναντήσεις στελεχών",
     "services.eyebrow": "Η εξειδίκευσή μας",
-    "services.titleStart": "Ένα πλήρες σύνολο υπηρεσιών,",
+    "services.titlePrefix": "Ένα",
+    "services.titleHighlight": "πλήρες",
+    "services.titleSuffix": "σύνολο υπηρεσιών,",
     "services.titleEnd": "διαμορφωμένο γύρω από τους στόχους σας.",
-    "services.signature": "Ξεχωριστή υπηρεσία 07",
     "services.items.events.title": "Εταιρικές Εκδηλώσεις & Πάρτι",
     "services.items.events.text": "Gala, γιορτές ομάδων, σημαντικές επέτειοι και εταιρικά πάρτι σχεδιασμένα γύρω από την κουλτούρα σας.",
     "services.items.conferences.title": "Συνέδρια & Επαγγελματικές Συναντήσεις",
@@ -194,9 +222,16 @@ const translations = {
     "services.items.design.text": "Ταυτότητα εκδήλωσης, σκηνικό, διακόσμηση, φωτισμός, σήμανση και λεπτομέρειες που συνδέουν την εμπειρία.",
     "services.items.onsite.title": "Επιτόπια Επίβλεψη",
     "services.items.onsite.text": "Αφοσιωμένη διαχείριση ώστε τα χρονοδιαγράμματα, τα logistics και οι προμηθευτές να λειτουργούν ομαλά.",
-    "services.items.gifts.title": "Εταιρικά Δώρα & Δώρα Συνεργατών",
-    "services.items.gifts.text": "Προσεγμένα καλάθια καλωσορίσματος, προσωποποιημένα αναμνηστικά και δώρα συνεργατών που αφήνουν εντύπωση.",
-    "faq.title": "Ερωτήσεις πριν ξεκινήσουμε;",
+    "services.items.employeeGifts.title": "Δώρα για Εργαζομένους",
+    "services.items.employeeGifts.text": "Προσεγμένα δώρα καλωσορίσματος, επιβράβευσης και εορτών που αναγνωρίζουν και χαροποιούν τους ανθρώπους σας.",
+    "services.items.partnerGifts.title": "Δώρα για Συνεργάτες",
+    "services.items.partnerGifts.text": "Εκλεπτυσμένα δώρα, ευθυγραμμισμένα με το brand σας, που ενισχύουν τις σχέσεις με πελάτες και συνεργάτες.",
+    "services.items.festive.title": "Εορταστικές Ιδιωτικές Εκδηλώσεις",
+    "services.items.festive.text": "Όμορφα συντονισμένες ιδιωτικές γιορτές για εορταστικές περιόδους, ορόσημα και ξεχωριστές περιστάσεις.",
+    "services.ctaEyebrow": "Έχετε κάτι διαφορετικό στο μυαλό σας;",
+    "services.ctaTitle": "Ας διαμορφώσουμε μαζί τη σωστή εμπειρία.",
+    "faq.titlePrefix": "Ερωτήσεις πριν",
+    "faq.titleHighlight": "ξεκινήσουμε;",
     "faq.items.types.question": "Τι είδους εταιρικές εκδηλώσεις διοργανώνει η MIA;",
     "faq.items.types.answer": "Σχεδιάζουμε εταιρικές γιορτές, συνέδρια, συναντήσεις στελεχών, τακτικές εκδηλώσεις ομάδων και εξατομικευμένες επαγγελματικές εμπειρίες σε όλη την Κύπρο.",
     "faq.items.notice.question": "Πόσο νωρίς πρέπει να επικοινωνήσουμε;",
@@ -205,6 +240,18 @@ const translations = {
     "faq.items.scope.answer": "Ναι. Μπορούμε να διαχειριστούμε ολόκληρη την εμπειρία ή έναν συγκεκριμένο τομέα, όπως τον χώρο, την παραγωγή, τα δώρα ή τον επιτόπιο συντονισμό.",
     "faq.items.location.question": "Εργάζεστε σε όλη την Κύπρο;",
     "faq.items.location.answer": "Ναι. Υποστηρίζουμε εκδηλώσεις σε ολόκληρο το νησί και συντονίζουμε τους κατάλληλους τοπικούς συνεργάτες για κάθε τοποθεσία.",
+    "faq.items.budget.question": "Μπορείτε να εργαστείτε εντός συγκεκριμένου προϋπολογισμού;",
+    "faq.items.budget.answer": "Ναι. Καθορίζουμε από νωρίς τις προτεραιότητες και προτείνουμε την κατάλληλη μορφή, προμηθευτές και επιλογές παραγωγής για τον διαθέσιμο προϋπολογισμό.",
+    "faq.items.venue.question": "Μπορείτε να μας βοηθήσετε να βρούμε χώρο;",
+    "faq.items.venue.answer": "Ναι. Αναζητούμε και συγκρίνουμε κατάλληλους χώρους με βάση την τοποθεσία, τη χωρητικότητα, το ύφος, τα logistics και τον προϋπολογισμό.",
+    "faq.items.gifts.question": "Δημιουργείτε εξατομικευμένα εταιρικά δώρα;",
+    "faq.items.gifts.answer": "Ναι. Αναπτύσσουμε προτάσεις δώρων για εργαζομένους και συνεργάτες, συμπεριλαμβανομένης της προμήθειας, προσωποποίησης, συσκευασίας και παράδοσης.",
+    "faq.items.private.question": "Διοργανώνετε ιδιωτικές εορταστικές εκδηλώσεις;",
+    "faq.items.private.answer": "Ναι. Συντονίζουμε επιλεγμένες ιδιωτικές γιορτές και εορταστικές εμπειρίες με την ίδια φροντίδα που εφαρμόζουμε στις εταιρικές μας εκδηλώσεις.",
+    "faq.items.day.question": "Ποιος βρίσκεται στον χώρο την ημέρα της εκδήλωσης;",
+    "faq.items.day.answer": "Ένας αφοσιωμένος συντονιστής της MIA επιβλέπει το συμφωνημένο πρόγραμμα, τους προμηθευτές και τις σημαντικές στιγμές της εκδήλωσης.",
+    "faq.items.start.question": "Τι χρειάζεστε από εμάς για να ξεκινήσουμε;",
+    "faq.items.start.answer": "Μια κατά προσέγγιση ημερομηνία, ο αριθμός καλεσμένων, η προτίμηση τοποθεσίας, το εύρος προϋπολογισμού και το συναίσθημα που θέλετε να δημιουργήσετε αρκούν για την πρώτη συζήτηση.",
     "contact.eyebrow": "Ας ξεκινήσουμε τη συζήτηση",
     "contact.titleStart": "Πείτε μας τι",
     "contact.titleHighlight": "σχεδιάζετε στη συνέχεια.",
@@ -213,6 +260,7 @@ const translations = {
     "contact.consultationLabel": "Συμβουλευτική",
     "contact.consultationValue": "Στείλτε ένα σύντομο brief",
     "footer.tagline": "Ανθρωποκεντρικές εταιρικές εκδηλώσεις σε όλη την Κύπρο.",
+    "footer.socialLabel": "Κοινωνικά δίκτυα της MIA Events",
     "studio17.prefix": "Ανάπτυξη & συντήρηση από",
     "studio17.ariaLabel": "Ανάπτυξη και συντήρηση ιστοσελίδας από το Studio 17",
     "booking.eyebrow": "Το brief της εκδήλωσής σας",
@@ -237,6 +285,95 @@ const translations = {
     "booking.messageDetails": "Λεπτομέρειες"
   }
 };
+
+const introOverlay = document.querySelector("[data-intro]");
+const introLetters = [...document.querySelectorAll(".intro-letter")];
+const introSubline = document.querySelector(".intro-subline");
+const introImages = [
+  "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1400&q=82",
+  "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1400&q=82",
+  "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=1400&q=82",
+  "https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1400&q=82"
+];
+let introTimer;
+let introImageTimer;
+
+function completeIntro() {
+  if (!introOverlay || introOverlay.classList.contains("is-complete")) return;
+  clearTimeout(introTimer);
+  clearInterval(introImageTimer);
+
+  const content = introOverlay.querySelector(".intro-content");
+  content?.animate(
+    [
+      { opacity: 1, transform: "translateY(0) scale(1)" },
+      { opacity: 0, transform: "translateY(-1rem) scale(.985)" }
+    ],
+    { duration: 520, easing: "cubic-bezier(.4, 0, .2, 1)", fill: "forwards" }
+  );
+
+  const fade = introOverlay.animate([{ opacity: 1 }, { opacity: 0 }], {
+    duration: 620,
+    delay: 180,
+    easing: "ease-in-out",
+    fill: "forwards"
+  });
+  fade.onfinish = () => {
+    introOverlay.classList.add("is-complete");
+    document.body.classList.remove("is-locked");
+  };
+}
+
+function runCinematicIntro() {
+  if (!introOverlay) return;
+
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let alreadyViewed = false;
+  try { alreadyViewed = sessionStorage.getItem("mia-intro-viewed") === "true"; } catch { /* Continue without session storage. */ }
+
+  if (prefersReducedMotion || alreadyViewed) {
+    introOverlay.classList.add("is-complete");
+    return;
+  }
+
+  document.body.classList.add("is-locked");
+  try { sessionStorage.setItem("mia-intro-viewed", "true"); } catch { /* Animation still works without storage. */ }
+
+  introLetters.forEach((letter, index) => {
+    letter.style.backgroundImage = `url("${introImages[index % introImages.length]}")`;
+    letter.animate(
+      [
+        { opacity: 0, transform: "translateY(1.25rem) scale(.97)", letterSpacing: ".12em" },
+        { opacity: 1, transform: "translateY(0) scale(1)", letterSpacing: ".02em" }
+      ],
+      {
+        duration: 720,
+        delay: 120 + index * 70,
+        easing: "cubic-bezier(.22, 1, .36, 1)",
+        fill: "forwards"
+      }
+    );
+  });
+
+  introImageTimer = window.setInterval(() => {
+    introLetters.forEach((letter, index) => {
+      const current = Math.floor(performance.now() / 330) + index;
+      letter.style.backgroundImage = `url("${introImages[current % introImages.length]}")`;
+    });
+  }, 330);
+
+  introSubline?.animate(
+    [
+      { opacity: 0, transform: "translateY(.75rem)" },
+      { opacity: 1, transform: "translateY(0)" }
+    ],
+    { duration: 520, delay: 1450, easing: "cubic-bezier(.22, 1, .36, 1)", fill: "forwards" }
+  );
+
+  introTimer = window.setTimeout(completeIntro, 2550);
+}
+
+document.querySelector("[data-intro-skip]")?.addEventListener("click", completeIntro);
 
 const getStoredLanguage = () => {
   try { return localStorage.getItem(STORAGE_KEY); } catch { return null; }
@@ -336,11 +473,33 @@ const scrollGallery = (direction) => {
 document.querySelector("[data-gallery-previous]")?.addEventListener("click", () => scrollGallery(-1));
 document.querySelector("[data-gallery-next]")?.addEventListener("click", () => scrollGallery(1));
 
-document.querySelectorAll(".accordion-item button").forEach((button) => {
+const faqButtons = [...document.querySelectorAll(".accordion-item button")];
+
+function closeFaq(button) {
+  const panel = button.parentElement?.nextElementSibling;
+  button.closest(".accordion-item")?.classList.remove("is-open");
+  button.setAttribute("aria-expanded", "false");
+  if (panel) panel.style.maxHeight = "0px";
+}
+
+function openFaq(button) {
+  const panel = button.parentElement?.nextElementSibling;
+  button.closest(".accordion-item")?.classList.add("is-open");
+  button.setAttribute("aria-expanded", "true");
+  if (panel) panel.style.maxHeight = `${panel.scrollHeight}px`;
+}
+
+faqButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const willOpen = button.getAttribute("aria-expanded") !== "true";
-    document.querySelectorAll(".accordion-item button").forEach((item) => item.setAttribute("aria-expanded", "false"));
-    button.setAttribute("aria-expanded", String(willOpen));
+    faqButtons.forEach(closeFaq);
+    if (willOpen) openFaq(button);
+  });
+});
+
+window.addEventListener("resize", () => {
+  faqButtons.forEach((button) => {
+    if (button.getAttribute("aria-expanded") === "true") openFaq(button);
   });
 });
 
@@ -396,4 +555,5 @@ document.querySelectorAll("[data-current-year]").forEach((element) => {
   element.textContent = String(new Date().getFullYear());
 });
 
+runCinematicIntro();
 translatePage(currentLanguage);

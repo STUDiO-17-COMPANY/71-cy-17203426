@@ -24,6 +24,11 @@
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,300,0,0&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
     <script>document.documentElement.classList.replace('no-js', 'js');</script>
     <script type="module" src="/src/scripts/main.js"></script>
   </head>
@@ -31,25 +36,32 @@
   <body>
     <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to main content</a>
 
+    <aside class="cinematic-intro" data-intro aria-label="Brand introduction" data-i18n-aria-label="a11y.brandIntro">
+      <div class="intro-content">
+        <div class="intro-word" aria-hidden="true">
+          <span class="intro-letter">M</span><span class="intro-letter">I</span><span class="intro-letter">A</span>
+          <span class="intro-gap"></span>
+          <span class="intro-letter">E</span><span class="intro-letter">V</span><span class="intro-letter">E</span><span class="intro-letter">N</span><span class="intro-letter">T</span><span class="intro-letter">S</span>
+        </div>
+        <div class="intro-subline">
+          <span></span><strong>&amp; EXPERIENCES</strong><span></span>
+        </div>
+      </div>
+      <button class="intro-skip" type="button" data-intro-skip data-i18n="actions.skipIntro">Skip intro</button>
+    </aside>
+
     <header class="site-header" data-header>
       <div class="container header-inner">
         <a class="brand" href="#top" aria-label="MIA Events & Experiences home">
-          <img class="brand-mark" src="/favicon.svg" width="48" height="48" alt="" />
+          <img class="brand-mark" src="/FinalLogo_mia.png" width="344" height="246" alt="" />
           <span class="brand-name">MIA EVENTS <span>&amp; EXPERIENCES</span></span>
         </a>
-
-        <nav class="desktop-nav" aria-label="Primary navigation" data-i18n-aria-label="a11y.primaryNav">
-          <a href="#approach" data-i18n="nav.approach">Our approach</a>
-          <a href="#services" data-i18n="nav.services">Services</a>
-          <a href="#faq" data-i18n="nav.faq">FAQ</a>
-          <a href="#contact" data-i18n="nav.contact">Contact</a>
-        </nav>
 
         <div class="header-actions">
           <button class="language-switch" type="button" data-language-switch aria-label="Switch language">
             <span aria-hidden="true" data-language-label>ΕΛ</span>
           </button>
-          <a class="icon-button header-call" href="tel:+35799516834" aria-label="Call MIA Events" data-i18n-aria-label="actions.call">
+          <a class="icon-button header-call" href="tel:+35796848113" aria-label="Call MIA Events" data-i18n-aria-label="actions.call">
             <span class="material-symbols-rounded" aria-hidden="true">call</span>
           </a>
           <button class="menu-button" type="button" data-menu-open aria-controls="mobile-menu" aria-expanded="false">
@@ -90,14 +102,10 @@
               End-to-end corporate event planning across Cyprus, delivered with personal coordination at every stage.
             </p>
             <div class="hero-actions">
-              <button class="button button-primary" type="button" data-booking-open>
+              <button class="button button-accent" type="button" data-booking-open>
                 <span data-i18n="actions.consultation">Book a consultation</span>
                 <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
               </button>
-              <a class="button button-whatsapp" href="https://wa.me/35799516834" target="_blank" rel="noreferrer">
-                <span class="material-symbols-rounded" aria-hidden="true">chat</span>
-                <span data-i18n="actions.whatsapp">WhatsApp us</span>
-              </a>
             </div>
           </div>
         </div>
@@ -153,7 +161,7 @@
             <div class="section-heading">
               <p class="eyebrow" data-i18n="gallery.eyebrow">Made for meaningful moments</p>
               <h2 id="gallery-title">
-                <span data-i18n="gallery.titleStart">Elevating enterprise</span><br />
+                <span data-i18n="gallery.titlePrefix">Elevating</span> <mark data-i18n="gallery.titleHighlight">enterprise</mark><br />
                 <span data-i18n="gallery.titleEnd">and executive gatherings.</span>
               </h2>
             </div>
@@ -194,10 +202,10 @@
 
       <section class="section services" id="services" aria-labelledby="services-title">
         <div class="container">
-          <div class="section-heading section-heading-centered">
+          <div class="section-heading services-heading">
             <p class="eyebrow" data-i18n="services.eyebrow">Our expertise</p>
             <h2 id="services-title">
-              <span data-i18n="services.titleStart">A complete service suite,</span><br />
+              <span data-i18n="services.titlePrefix">A</span> <mark class="mark-purple" data-i18n="services.titleHighlight">complete</mark> <span data-i18n="services.titleSuffix">service suite,</span><br />
               <span data-i18n="services.titleEnd">shaped around your objectives.</span>
             </h2>
           </div>
@@ -239,29 +247,47 @@
               <p data-i18n="services.items.onsite.text">Dedicated event management to keep timelines, logistics and suppliers moving smoothly on the day.</p>
               <button class="text-link" type="button" data-booking-open data-service="On-Site Supervision"><span data-i18n="actions.bookService">Book this service</span><span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></button>
             </article>
-            <article class="service-feature">
-              <div>
-                <p class="eyebrow" data-i18n="services.signature">Signature service 07</p>
-                <h3 data-i18n="services.items.gifts.title">Corporate &amp; Partner Gifts</h3>
-                <p data-i18n="services.items.gifts.text">Tailored welcome baskets, personalised keepsakes and partner gifts that leave a thoughtful impression.</p>
-              </div>
-              <button class="button button-accent" type="button" data-booking-open data-service="Corporate & Partner Gifts">
-                <span data-i18n="actions.discussGifts">Discuss your gifts</span>
-                <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
-              </button>
+            <article class="service-card">
+              <div class="service-card-top"><span>07</span><span class="material-symbols-rounded" aria-hidden="true">featured_seasonal_and_gifts</span></div>
+              <h3 data-i18n="services.items.employeeGifts.title">Gifts for Employees</h3>
+              <p data-i18n="services.items.employeeGifts.text">Thoughtful welcome, milestone and seasonal gifts created to recognise and delight your people.</p>
+              <button class="text-link" type="button" data-booking-open data-service="Gifts for Employees"><span data-i18n="actions.bookService">Book this service</span><span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></button>
             </article>
+            <article class="service-card">
+              <div class="service-card-top"><span>08</span><span class="material-symbols-rounded" aria-hidden="true">redeem</span></div>
+              <h3 data-i18n="services.items.partnerGifts.title">Gifts for Partners</h3>
+              <p data-i18n="services.items.partnerGifts.text">Refined, brand-aligned gifts that strengthen relationships with clients and business partners.</p>
+              <button class="text-link" type="button" data-booking-open data-service="Gifts for Partners"><span data-i18n="actions.bookService">Book this service</span><span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></button>
+            </article>
+            <article class="service-card">
+              <div class="service-card-top"><span>09</span><span class="material-symbols-rounded" aria-hidden="true">festival</span></div>
+              <h3 data-i18n="services.items.festive.title">Festive Private Events</h3>
+              <p data-i18n="services.items.festive.text">Beautifully coordinated private celebrations for festive seasons, milestones and special occasions.</p>
+              <button class="text-link" type="button" data-booking-open data-service="Festive Private Events"><span data-i18n="actions.bookService">Book this service</span><span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></button>
+            </article>
+          </div>
+
+          <div class="services-cta">
+            <div>
+              <p class="eyebrow" data-i18n="services.ctaEyebrow">Have something different in mind?</p>
+              <h3 data-i18n="services.ctaTitle">Let’s shape the right experience together.</h3>
+            </div>
+            <button class="button button-accent" type="button" data-booking-open>
+              <span data-i18n="actions.consultation">Book a consultation</span>
+              <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+            </button>
           </div>
         </div>
       </section>
 
       <section class="section faq" id="faq" aria-labelledby="faq-title">
-        <div class="container container-narrow">
+        <div class="container">
           <div class="section-heading section-heading-centered">
             <p class="eyebrow">FAQ</p>
-            <h2 id="faq-title" data-i18n="faq.title">Questions before we begin?</h2>
+            <h2 id="faq-title"><span data-i18n="faq.titlePrefix">Questions before</span> <mark data-i18n="faq.titleHighlight">we begin?</mark></h2>
           </div>
 
-          <div class="accordion">
+          <div class="accordion faq-grid">
             <article class="accordion-item">
               <h3><button type="button" aria-expanded="false"><span data-i18n="faq.items.types.question">What types of corporate events does MIA organise?</span><span class="material-symbols-rounded" aria-hidden="true">add</span></button></h3>
               <div class="accordion-panel"><p data-i18n="faq.items.types.answer">We plan corporate celebrations, conferences, executive meetings, recurring team events, offsites and bespoke business experiences across Cyprus.</p></div>
@@ -277,6 +303,30 @@
             <article class="accordion-item">
               <h3><button type="button" aria-expanded="false"><span data-i18n="faq.items.location.question">Do you work across Cyprus?</span><span class="material-symbols-rounded" aria-hidden="true">add</span></button></h3>
               <div class="accordion-panel"><p data-i18n="faq.items.location.answer">Yes. We support events across the island and coordinate the right local partners for each location.</p></div>
+            </article>
+            <article class="accordion-item">
+              <h3><button type="button" aria-expanded="false"><span data-i18n="faq.items.budget.question">Can you work within a defined budget?</span><span class="material-symbols-rounded" aria-hidden="true">add</span></button></h3>
+              <div class="accordion-panel"><p data-i18n="faq.items.budget.answer">Yes. We establish priorities early and recommend the right format, suppliers and production choices for your available budget.</p></div>
+            </article>
+            <article class="accordion-item">
+              <h3><button type="button" aria-expanded="false"><span data-i18n="faq.items.venue.question">Can you help us find a venue?</span><span class="material-symbols-rounded" aria-hidden="true">add</span></button></h3>
+              <div class="accordion-panel"><p data-i18n="faq.items.venue.answer">Yes. We source and compare suitable venues based on location, capacity, style, logistics and budget.</p></div>
+            </article>
+            <article class="accordion-item">
+              <h3><button type="button" aria-expanded="false"><span data-i18n="faq.items.gifts.question">Do you create custom corporate gifts?</span><span class="material-symbols-rounded" aria-hidden="true">add</span></button></h3>
+              <div class="accordion-panel"><p data-i18n="faq.items.gifts.answer">Yes. We develop employee and partner gifting concepts, including sourcing, personalisation, packaging and delivery coordination.</p></div>
+            </article>
+            <article class="accordion-item">
+              <h3><button type="button" aria-expanded="false"><span data-i18n="faq.items.private.question">Do you organise private festive events?</span><span class="material-symbols-rounded" aria-hidden="true">add</span></button></h3>
+              <div class="accordion-panel"><p data-i18n="faq.items.private.answer">Yes. We coordinate selected private celebrations and festive experiences with the same care applied to our corporate work.</p></div>
+            </article>
+            <article class="accordion-item">
+              <h3><button type="button" aria-expanded="false"><span data-i18n="faq.items.day.question">Who is present on the event day?</span><span class="material-symbols-rounded" aria-hidden="true">add</span></button></h3>
+              <div class="accordion-panel"><p data-i18n="faq.items.day.answer">A dedicated MIA coordinator oversees the agreed timeline, suppliers and key moments throughout the event.</p></div>
+            </article>
+            <article class="accordion-item">
+              <h3><button type="button" aria-expanded="false"><span data-i18n="faq.items.start.question">What do you need from us to get started?</span><span class="material-symbols-rounded" aria-hidden="true">add</span></button></h3>
+              <div class="accordion-panel"><p data-i18n="faq.items.start.answer">An approximate date, guest count, location preference, budget range and the outcome or feeling you want to create are enough for an initial conversation.</p></div>
             </article>
           </div>
         </div>
@@ -294,9 +344,14 @@
           </div>
 
           <div class="contact-actions">
-            <a class="contact-card contact-card-whatsapp" href="https://wa.me/35799516834" target="_blank" rel="noreferrer">
-              <span class="material-symbols-rounded" aria-hidden="true">chat</span>
-              <span><small>WhatsApp</small><strong>+357 99 516834</strong></span>
+            <a class="contact-card contact-card-whatsapp" href="https://wa.me/35796848113" target="_blank" rel="noreferrer">
+              <span class="brand-icon-wrap"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></span>
+              <span><small>WhatsApp</small><strong>+357 96 848113</strong></span>
+              <span class="material-symbols-rounded" aria-hidden="true">arrow_outward</span>
+            </a>
+            <a class="contact-card contact-card-viber" href="viber://chat?number=%2B35796848113">
+              <span class="brand-icon-wrap"><i class="fa-brands fa-viber" aria-hidden="true"></i></span>
+              <span><small>Viber</small><strong>+357 96 848113</strong></span>
               <span class="material-symbols-rounded" aria-hidden="true">arrow_outward</span>
             </a>
             <a class="contact-card" href="mailto:info@miaevents.company">
@@ -318,7 +373,7 @@
       <div class="container footer-grid">
         <div>
           <a class="brand footer-brand" href="#top">
-            <img class="brand-mark" src="/favicon.svg" width="48" height="48" alt="" />
+            <img class="brand-mark" src="/FinalLogo_mia.png" width="344" height="246" alt="" />
             <span class="brand-name">MIA EVENTS <span>&amp; EXPERIENCES</span></span>
           </a>
           <p data-i18n="footer.tagline">People-first corporate events across Cyprus.</p>
@@ -330,9 +385,13 @@
           <a href="#contact" data-i18n="nav.contact">Contact</a>
         </nav>
         <div class="footer-contact">
-          <a href="tel:+35799516834">+357 99 516834</a>
+          <a href="tel:+35796848113">+357 96 848113</a>
           <a href="mailto:info@miaevents.company">info@miaevents.company</a>
           <span>Cyprus</span>
+          <div class="footer-socials" aria-label="Social media" data-i18n-aria-label="footer.socialLabel">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+          </div>
         </div>
       </div>
       <div class="container footer-bottom">
@@ -372,7 +431,8 @@
           <a href="#contact" data-i18n="nav.contact">Contact</a>
         </nav>
         <div class="drawer-footer">
-          <a class="button button-whatsapp" href="https://wa.me/35799516834" target="_blank" rel="noreferrer"><span class="material-symbols-rounded" aria-hidden="true">chat</span><span data-i18n="actions.whatsapp">WhatsApp us</span></a>
+          <a class="button button-whatsapp" href="https://wa.me/35796848113" target="_blank" rel="noreferrer"><i class="fa-brands fa-whatsapp button-brand-icon" aria-hidden="true"></i><span data-i18n="actions.whatsapp">WhatsApp us</span></a>
+          <a class="button button-viber" href="viber://chat?number=%2B35796848113"><i class="fa-brands fa-viber button-brand-icon" aria-hidden="true"></i><span>Viber</span></a>
           <a href="mailto:info@miaevents.company">info@miaevents.company</a>
         </div>
       </aside>
@@ -403,7 +463,9 @@
               <option value="Venue & Supplier Management" data-i18n="services.items.venue.title">Venue &amp; Supplier Management</option>
               <option value="Design & Production" data-i18n="services.items.design.title">Design &amp; Production</option>
               <option value="On-Site Supervision" data-i18n="services.items.onsite.title">On-Site Supervision</option>
-              <option value="Corporate & Partner Gifts" data-i18n="services.items.gifts.title">Corporate &amp; Partner Gifts</option>
+              <option value="Gifts for Employees" data-i18n="services.items.employeeGifts.title">Gifts for Employees</option>
+              <option value="Gifts for Partners" data-i18n="services.items.partnerGifts.title">Gifts for Partners</option>
+              <option value="Festive Private Events" data-i18n="services.items.festive.title">Festive Private Events</option>
             </select>
           </div>
           <div class="field-row">
@@ -421,7 +483,7 @@
             <textarea id="booking-details" name="details" rows="4" data-i18n-placeholder="booking.detailsPlaceholder" placeholder="Location, occasion and anything we should know..."></textarea>
           </div>
           <button class="button button-whatsapp button-full" type="submit">
-            <span class="material-symbols-rounded" aria-hidden="true">chat</span>
+            <i class="fa-brands fa-whatsapp button-brand-icon" aria-hidden="true"></i>
             <span data-i18n="booking.submit">Continue on WhatsApp</span>
           </button>
           <a class="dialog-email" href="mailto:info@miaevents.company" data-i18n="booking.emailAlternative">Or send us an email instead</a>
