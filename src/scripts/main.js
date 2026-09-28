@@ -492,7 +492,7 @@ function openFaq(button) {
 faqButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const willOpen = button.getAttribute("aria-expanded") !== "true";
-    faqButtons.forEach(closeFaq);
+    button.closest(".faq-column")?.querySelectorAll(".accordion-item button").forEach(closeFaq);
     if (willOpen) openFaq(button);
   });
 });
