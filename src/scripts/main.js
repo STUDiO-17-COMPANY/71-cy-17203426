@@ -1,6 +1,6 @@
 import "../styles/style.css";
 
-const PHONE = "35796848113";
+const PHONE = "35799516834";
 const STORAGE_KEY = "mia-language";
 
 const translations = {

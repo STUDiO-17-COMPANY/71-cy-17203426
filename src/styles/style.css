@@ -346,14 +346,15 @@
   .contact-card { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 1rem; width: 100%; border: 1px solid rgb(255 255 255 / .14); border-radius: var(--radius-md); background: rgb(255 255 255 / .07); padding: 1rem 1.1rem; color: var(--color-white); text-align: left; transition: background var(--transition), transform var(--transition), border-color var(--transition); }
   .contact-card:hover { border-color: rgb(255 255 255 / .3); background: rgb(255 255 255 / .13); transform: translateX(4px); }
   .contact-card > .material-symbols-rounded:first-child, .brand-icon-wrap { display: grid; width: 2.8rem; height: 2.8rem; place-items: center; border-radius: 50%; background: rgb(255 255 255 / .12); }
-  .brand-icon-wrap i { display: grid; width: 100%; height: 100%; place-items: center; font-size: 1.55rem; line-height: 1; text-align: center; }
-  .brand-icon-wrap i::before { display: block; line-height: 1; }
+  .brand-icon-wrap { line-height: 0; }
+  .brand-icon-wrap i { display: grid; width: 100%; height: 100%; place-items: center; font-size: 1.45rem; font-style: normal; line-height: 1; text-align: center; }
+  .brand-icon-wrap i::before { display: grid; width: 100%; height: 100%; place-items: center; line-height: 1; }
   .contact-card small { display: block; color: #cbbfd3; font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; }
   .contact-card strong { display: block; margin-top: .1rem; font-size: 1rem; font-weight: 500; }
-  .contact-card-whatsapp .brand-icon-wrap { background: var(--color-white); }
-  .contact-card-whatsapp .brand-icon-wrap i { color: #25d366; }
-  .contact-card-viber .brand-icon-wrap { background: var(--color-white); }
-  .contact-card-viber .brand-icon-wrap i { color: #7360f2; }
+  .contact-card-whatsapp .brand-icon-wrap { background: rgb(37 211 102 / .16); }
+  .contact-card-whatsapp .brand-icon-wrap i { color: #66e296; }
+  .contact-card-viber .brand-icon-wrap { background: rgb(115 96 242 / .18); }
+  .contact-card-viber .brand-icon-wrap i { color: #b0a5ff; }
 
   .site-footer { background: var(--color-white); padding: 4rem 0 1.5rem; }
   .footer-grid { display: grid; grid-template-columns: 1.5fr .7fr 1fr; gap: 3rem; }
