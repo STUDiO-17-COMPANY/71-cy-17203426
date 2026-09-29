@@ -179,10 +179,10 @@
               End-to-end corporate event planning across Cyprus, delivered with personal coordination at every stage.
             </p>
             <div class="hero-actions">
-              <a class="button button-accent" href="https://wa.me/35799516834?text=Hello%20MIA%20Events%2C%20I%20would%20like%20to%20book%20a%20consultation%20for%20an%20upcoming%20event." target="_blank" rel="noopener noreferrer" data-whatsapp-consultation>
+              <button class="button button-accent" type="button" data-booking-open data-service="General Event Consultation">
                 <span data-i18n="actions.consultation">Book a consultation</span>
                 <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -349,10 +349,10 @@
               <p class="eyebrow" data-i18n="services.ctaEyebrow">Have something different in mind?</p>
               <h3 data-i18n="services.ctaTitle">Let’s shape the right experience together.</h3>
             </div>
-            <a class="button button-accent" href="https://wa.me/35799516834?text=Hello%20MIA%20Events%2C%20I%20would%20like%20to%20book%20a%20consultation%20for%20an%20upcoming%20event." target="_blank" rel="noopener noreferrer" data-whatsapp-consultation>
+            <button class="button button-accent" type="button" data-booking-open data-service="General Event Consultation">
               <span data-i18n="actions.consultation">Book a consultation</span>
               <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
-            </a>
+            </button>
           </div>
         </div>
       </section>
@@ -440,11 +440,11 @@
               <span><small data-i18n="contact.emailLabel">Email</small><strong>info@miaevents.company</strong></span>
               <span class="material-symbols-rounded contact-card-arrow" aria-hidden="true">arrow_outward</span>
             </a>
-            <a class="contact-card" href="https://wa.me/35799516834?text=Hello%20MIA%20Events%2C%20I%20would%20like%20to%20book%20a%20consultation%20for%20an%20upcoming%20event." target="_blank" rel="noopener noreferrer" data-whatsapp-consultation>
+            <button class="contact-card" type="button" data-booking-open data-service="General Event Consultation">
               <span class="contact-card-icon" aria-hidden="true"><span class="material-symbols-rounded">calendar_month</span></span>
               <span><small data-i18n="contact.consultationLabel">Consultation</small><strong data-i18n="contact.consultationValue">Send an event brief</strong></span>
               <span class="material-symbols-rounded contact-card-arrow" aria-hidden="true">arrow_forward</span>
-            </a>
+            </button>
           </div>
         </div>
       </section>
@@ -518,6 +518,11 @@
         </div>
       </aside>
     </div>
+
+    <a class="mobile-whatsapp-cta" href="https://wa.me/35799516834" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp us" data-i18n-aria-label="actions.whatsapp">
+      <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+      <span data-i18n="actions.whatsapp">WhatsApp us</span>
+    </a>
 
     <dialog class="booking-dialog" data-booking-dialog aria-labelledby="booking-title">
       <button class="dialog-backdrop" type="button" data-booking-close tabindex="-1" aria-label="Close consultation form"></button>
