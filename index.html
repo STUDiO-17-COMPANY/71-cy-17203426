@@ -1,147 +1,587 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LY6XSJJRMX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-LY6XSJJRMX');
-  </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LY6XSJJRMX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LY6XSJJRMX');
+    </script>
 
-  <meta name="theme-color" content="#0456fe">
-  <meta name="robots" content="noindex, follow">
-  <meta name="description" content="The new MIA EVENTS website is being created. Discover Studio 17, the European multidisciplinary studio behind the work.">
-  <link rel="canonical" href="https://www.miaevents.company/">
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <title>MIA EVENTS — Something good is coming</title>
-  <link rel="stylesheet" href="/src/maintenance.css">
-</head>
-<body>
-  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+    <meta name="theme-color" content="#ff7008" />
+    <meta
+      name="description"
+      content="MIA EVENTS creates people-first corporate events, conferences and business experiences across Cyprus."
+      data-i18n-content="meta.description"
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="MIA EVENTS" />
+    <link rel="canonical" href="https://www.miaevents.company/" />
 
-  <header class="site-header">
-    <div class="header-inner shell">
-      <a class="brand" href="#top" aria-label="MIA EVENTS">
-        <span class="brand-mark" aria-hidden="true">M</span>
-        <span>MIA EVENTS</span>
-      </a>
-      <div class="header-actions">
-        <button class="language-toggle" type="button" id="languageToggle" aria-label="Change language">EL</button>
-        <a class="header-link studio-link" href="https://www.studio17.world/?utm_source=miaevents.company&utm_medium=referral&utm_campaign=maintenance_page&utm_content=header" target="_blank" rel="noopener noreferrer" data-track="explore_studio17_header">
-          <span data-i18n="headerCta">Discover Studio 17</span><span aria-hidden="true">↗</span>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MIA EVENTS" />
+    <meta property="og:url" content="https://www.miaevents.company/" />
+    <meta property="og:title" content="MIA EVENTS | Corporate Events in Cyprus" />
+    <meta property="og:description" content="People-first corporate events, conferences and business experiences delivered across Cyprus." />
+    <meta property="og:image" content="https://www.miaevents.company/social-share.png" />
+    <meta property="og:image:secure_url" content="https://www.miaevents.company/social-share.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="1024" />
+    <meta property="og:image:alt" content="MIA EVENTS" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:locale:alternate" content="el_GR" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MIA EVENTS | Corporate Events in Cyprus" />
+    <meta name="twitter:description" content="People-first corporate events, conferences and business experiences delivered across Cyprus." />
+    <meta name="twitter:image" content="https://www.miaevents.company/social-share.png" />
+    <meta name="twitter:image:alt" content="MIA EVENTS" />
+    <title data-i18n="meta.title">MIA EVENTS | Corporate Events in Cyprus</title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": ["LocalBusiness", "ProfessionalService"],
+            "@id": "https://www.miaevents.company/#business",
+            "name": "MIA EVENTS",
+            "url": "https://www.miaevents.company/",
+            "logo": "https://www.miaevents.company/FinalLogo_mia.png",
+            "image": "https://www.miaevents.company/social-share.png",
+            "description": "People-first corporate event planning, conferences, business meetings, gifting and private festive experiences across Cyprus.",
+            "telephone": "+35799010282",
+            "email": "info@miaevents.company",
+            "priceRange": "€€",
+            "areaServed": {
+              "@type": "Country",
+              "name": "Cyprus"
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "CY"
+            },
+            "knowsLanguage": ["en", "el"],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+35799010282",
+              "contactType": "customer service",
+              "availableLanguage": ["English", "Greek"],
+              "areaServed": "CY"
+            },
+            "serviceType": [
+              "Corporate event planning",
+              "Conference and business meeting planning",
+              "Venue and supplier management",
+              "Event design and production",
+              "On-site event supervision",
+              "Corporate gifting",
+              "Private festive events"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.miaevents.company/#website",
+            "url": "https://www.miaevents.company/",
+            "name": "MIA EVENTS",
+            "inLanguage": ["en", "el"],
+            "publisher": {
+              "@id": "https://www.miaevents.company/#business"
+            }
+          }
+        ]
+      }
+    </script>
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,300,0,0&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <script>document.documentElement.classList.replace('no-js', 'js');</script>
+    <script type="module" src="/src/scripts/main.js"></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to main content</a>
+
+    <aside class="cinematic-intro" data-intro aria-label="Brand introduction" data-i18n-aria-label="a11y.brandIntro">
+      <div class="intro-content">
+        <div class="intro-word" aria-hidden="true">
+          <span class="intro-letter">M</span><span class="intro-letter">I</span><span class="intro-letter">A</span>
+          <span class="intro-gap"></span>
+          <span class="intro-letter">E</span><span class="intro-letter">V</span><span class="intro-letter">E</span><span class="intro-letter">N</span><span class="intro-letter">T</span><span class="intro-letter">S</span>
+        </div>
+      </div>
+      <button class="intro-skip" type="button" data-intro-skip data-i18n="actions.skipIntro">Skip intro</button>
+    </aside>
+
+    <header class="site-header" data-header>
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="MIA EVENTS home">
+          <img class="brand-mark" src="/FinalLogo_mia.png" width="344" height="246" alt="" />
+          <span class="brand-name">MIA EVENTS</span>
         </a>
+
+        <div class="header-actions">
+          <button class="language-switch" type="button" data-language-switch aria-label="Switch language">
+            <span aria-hidden="true" data-language-label>ΕΛ</span>
+          </button>
+          <a class="icon-button header-call" href="tel:+35799010282" aria-label="Call MIA EVENTS" data-i18n-aria-label="actions.call">
+            <span class="material-symbols-rounded" aria-hidden="true">call</span>
+          </a>
+          <button class="menu-button" type="button" data-menu-open aria-controls="mobile-menu" aria-expanded="false">
+            <span data-i18n="nav.menu">Menu</span>
+            <span class="material-symbols-rounded" aria-hidden="true">menu</span>
+          </button>
+        </div>
       </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=2200&q=82"
+            alt=""
+            width="2200"
+            height="1467"
+            fetchpriority="high"
+          />
+        </div>
+
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow eyebrow-pill">
+              <span class="eyebrow-number">10+</span>
+              <span data-i18n="hero.experience">years of experience</span>
+            </p>
+            <h1 id="hero-title">
+              <span data-i18n="hero.title">Corporate Events</span><br />
+              <span class="ampersand">&amp;</span> <span data-i18n="hero.titleSecond">Experiences</span>
+            </h1>
+            <p class="hero-statement">
+              <span data-i18n="hero.statement">Designed around</span><br />
+              <strong data-i18n="hero.statementStrong">your people.</strong>
+            </p>
+            <p class="hero-summary" data-i18n="hero.summary">
+              End-to-end corporate event planning across Cyprus, delivered with personal coordination at every stage.
+            </p>
+            <div class="hero-actions">
+              <button class="button button-accent" type="button" data-booking-open data-service="General Event Consultation">
+                <span data-i18n="actions.consultation">Book a consultation</span>
+                <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <a class="scroll-cue" href="#approach" aria-label="Scroll to our approach" data-i18n-aria-label="a11y.scrollApproach">
+          <span class="material-symbols-rounded" aria-hidden="true">south</span>
+        </a>
+      </section>
+
+      <section class="section approach" id="approach" aria-labelledby="approach-title">
+        <div class="container">
+          <div class="section-heading section-heading-wide">
+            <p class="eyebrow" data-i18n="approach.eyebrow">Why MIA</p>
+            <h2 id="approach-title">
+              <span data-i18n="approach.titleStart">Events are about</span>
+              <mark data-i18n="approach.titleHighlight">people.</mark><br />
+              <span data-i18n="approach.titleEnd">Everything else should work around them.</span>
+            </h2>
+          </div>
+
+          <div class="proof-grid">
+            <article class="proof-item">
+              <span class="material-symbols-rounded" aria-hidden="true">workspace_premium</span>
+              <strong>10+</strong>
+              <h3 data-i18n="proof.experienceTitle">Years of experience</h3>
+              <p data-i18n="proof.experienceText">Creating and coordinating memorable corporate events.</p>
+            </article>
+            <article class="proof-item">
+              <span class="material-symbols-rounded" aria-hidden="true">all_inclusive</span>
+              <strong data-i18n="proof.endToEndValue">End-to-end</strong>
+              <h3 data-i18n="proof.endToEndTitle">One point of contact</h3>
+              <p data-i18n="proof.endToEndText">From concept and suppliers to production and supervision.</p>
+            </article>
+            <article class="proof-item">
+              <span class="material-symbols-rounded" aria-hidden="true">location_on</span>
+              <strong data-i18n="proof.cyprusValue">Cyprus-wide</strong>
+              <h3 data-i18n="proof.cyprusTitle">Wherever your team meets</h3>
+              <p data-i18n="proof.cyprusText">Events supported across the island.</p>
+            </article>
+            <article class="proof-item">
+              <span class="material-symbols-rounded" aria-hidden="true">handshake</span>
+              <strong data-i18n="proof.personalValue">Personal</strong>
+              <h3 data-i18n="proof.personalTitle">Coordination that stays close</h3>
+              <p data-i18n="proof.personalText">Direct communication throughout the project.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery-section" aria-labelledby="gallery-title">
+        <div class="container">
+          <div class="section-heading-row">
+            <div class="section-heading">
+              <p class="eyebrow" data-i18n="gallery.eyebrow">Made for meaningful moments</p>
+              <h2 id="gallery-title">
+                <span data-i18n="gallery.titlePrefix">Elevating</span> <mark data-i18n="gallery.titleHighlight">enterprise</mark><br />
+                <span data-i18n="gallery.titleEnd">and executive gatherings.</span>
+              </h2>
+            </div>
+            <div class="gallery-controls" aria-label="Gallery controls" data-i18n-aria-label="a11y.galleryControls">
+              <button class="icon-button" type="button" data-gallery-previous aria-label="Previous image" data-i18n-aria-label="a11y.previous">
+                <span class="material-symbols-rounded" aria-hidden="true">arrow_back</span>
+              </button>
+              <button class="icon-button" type="button" data-gallery-next aria-label="Next image" data-i18n-aria-label="a11y.next">
+                <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-track" data-gallery-track tabindex="0">
+          <figure class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=900&q=80" alt="Corporate conference with a keynote stage" width="900" height="1200" loading="lazy" data-i18n-alt="gallery.images.conference" />
+            <figcaption data-i18n="gallery.captions.conference">Conferences &amp; keynotes</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=80" alt="Formal corporate dinner setting" width="900" height="1200" loading="lazy" data-i18n-alt="gallery.images.gala" />
+            <figcaption data-i18n="gallery.captions.gala">Corporate galas</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=900&q=80" alt="Team enjoying a relaxed social gathering" width="900" height="1200" loading="lazy" data-i18n-alt="gallery.images.social" />
+            <figcaption data-i18n="gallery.captions.social">Team socials</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=900&q=80" alt="Large event venue with stage lighting" width="900" height="1200" loading="lazy" data-i18n-alt="gallery.images.production" />
+            <figcaption data-i18n="gallery.captions.production">Event production</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=900&q=80" alt="Corporate networking event" width="900" height="1200" loading="lazy" data-i18n-alt="gallery.images.offsite" />
+            <figcaption data-i18n="gallery.captions.offsite">Leadership offsites</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section services" id="services" aria-labelledby="services-title">
+        <div class="container">
+          <div class="section-heading services-heading">
+            <p class="eyebrow" data-i18n="services.eyebrow">Our expertise</p>
+            <h2 id="services-title">
+              <span data-i18n="services.titlePrefix">A</span> <mark class="mark-purple" data-i18n="services.titleHighlight">complete</mark> <span data-i18n="services.titleSuffix">service suite,</span><br />
+              <span data-i18n="services.titleEnd">shaped around your objectives.</span>
+            </h2>
+          </div>
+
+          <div class="service-grid">
+            <article class="service-card">
+              <div class="service-card-top"><span>01</span><span class="material-symbols-rounded" aria-hidden="true">celebration</span></div>
+              <h3 data-i18n="services.items.events.title">Corporate Events &amp; Parties</h3>
+              <p data-i18n="services.items.events.text">Galas, team celebrations, milestone events and company parties designed around your culture.</p>
+              <button class="text-link" type="button" data-booking-open data-service="Corporate Events & Parties"><span data-i18n="actions.bookService">Book this service</span><span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></button>
+            </article>
+            <article class="service-card">
+              <div class="service-card-top"><span>02</span><span class="material-symbols-rounded" aria-hidden="true">co_present</span></div>
+              <h3 data-i18n="services.items.conferences.title">Conferences &amp; Business Meetings</h3>
+              <p data-i18n="services.items.conferences.text">Focused conferences, annual meetings, panels and executive environments with dependable production.</p>
+              <button class="text-link" type="button" data-booking-open data-service="Conferences & Business Meetings"><span data-i18n="actions.bookService">Book this service</span><span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></button>
+            </article>
+            <article class="service-card">
+              <div class="service-card-top"><span>03</span><span class="material-symbols-rounded" aria-hidden="true">groups</span></div>
+              <h3 data-i18n="services.items.socials.title">Monthly Events &amp; Happy Hours</h3>
+              <p data-i18n="services.items.socials.text">Recurring office socials, networking mixers and relaxed experiences with zero hassle for your team.</p>
+              <button class="text-link" type="button" data-booking-open data-service="Monthly Events & Happy Hours"><span data-i18n="actions.bookService">Book this service</span><span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></button>
+            </article>
+            <article class="service-card">
+              <div class="service-card-top"><span>04</span><span class="material-symbols-rounded" aria-hidden="true">distance</span></div>
+              <h3 data-i18n="services.items.venue.title">Venue &amp; Supplier Management</h3>
+              <p data-i18n="services.items.venue.text">Venue sourcing, trusted catering partners, entertainment and coordinated supplier relationships.</p>
+              <button class="text-link" type="button" data-booking-open data-service="Venue & Supplier Management"><span data-i18n="actions.bookService">Book this service</span><span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></button>
+            </article>
+            <article class="service-card">
+              <div class="service-card-top"><span>05</span><span class="material-symbols-rounded" aria-hidden="true">design_services</span></div>
+              <h3 data-i18n="services.items.design.title">Design &amp; Production</h3>
+              <p data-i18n="services.items.design.text">Event identity, stage design, décor, lighting, signage and details that make the experience feel cohesive.</p>
+              <button class="text-link" type="button" data-booking-open data-service="Design & Production"><span data-i18n="actions.bookService">Book this service</span><span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></button>
+            </article>
+            <article class="service-card">
+              <div class="service-card-top"><span>06</span><span class="material-symbols-rounded" aria-hidden="true">event_available</span></div>
+              <h3 data-i18n="services.items.onsite.title">On-Site Supervision</h3>
+              <p data-i18n="services.items.onsite.text">Dedicated event management to keep timelines, logistics and suppliers moving smoothly on the day.</p>
+              <button class="text-link" type="button" data-booking-open data-service="On-Site Supervision"><span data-i18n="actions.bookService">Book this service</span><span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></button>
+            </article>
+            <article class="service-card">
+              <div class="service-card-top"><span>07</span><span class="material-symbols-rounded" aria-hidden="true">featured_seasonal_and_gifts</span></div>
+              <h3 data-i18n="services.items.employeeGifts.title">Gifts for Employees</h3>
+              <p data-i18n="services.items.employeeGifts.text">Thoughtful welcome, milestone and seasonal gifts created to recognise and delight your people.</p>
+              <button class="text-link" type="button" data-booking-open data-service="Gifts for Employees"><span data-i18n="actions.bookService">Book this service</span><span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></button>
+            </article>
+            <article class="service-card">
+              <div class="service-card-top"><span>08</span><span class="material-symbols-rounded" aria-hidden="true">redeem</span></div>
+              <h3 data-i18n="services.items.partnerGifts.title">Gifts for Partners</h3>
+              <p data-i18n="services.items.partnerGifts.text">Refined, brand-aligned gifts that strengthen relationships with clients and business partners.</p>
+              <button class="text-link" type="button" data-booking-open data-service="Gifts for Partners"><span data-i18n="actions.bookService">Book this service</span><span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></button>
+            </article>
+            <article class="service-card">
+              <div class="service-card-top"><span>09</span><span class="material-symbols-rounded" aria-hidden="true">festival</span></div>
+              <h3 data-i18n="services.items.festive.title">Festive Private Events</h3>
+              <p data-i18n="services.items.festive.text">Beautifully coordinated private celebrations for festive seasons, milestones and special occasions.</p>
+              <button class="text-link" type="button" data-booking-open data-service="Festive Private Events"><span data-i18n="actions.bookService">Book this service</span><span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></button>
+            </article>
+          </div>
+
+          <div class="services-cta">
+            <div>
+              <p class="eyebrow" data-i18n="services.ctaEyebrow">Have something different in mind?</p>
+              <h3 data-i18n="services.ctaTitle">Let’s shape the right experience together.</h3>
+            </div>
+            <button class="button button-accent" type="button" data-booking-open data-service="General Event Consultation">
+              <span data-i18n="actions.consultation">Book a consultation</span>
+              <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq" id="faq" aria-labelledby="faq-title">
+        <div class="container">
+          <div class="section-heading section-heading-centered">
+            <p class="eyebrow">FAQ</p>
+            <h2 id="faq-title"><span data-i18n="faq.titlePrefix">Questions before</span> <mark data-i18n="faq.titleHighlight">we begin?</mark></h2>
+          </div>
+
+          <div class="accordion faq-grid">
+            <div class="faq-column">
+              <article class="accordion-item">
+                <h3><button type="button" aria-expanded="false"><span data-i18n="faq.items.types.question">What types of corporate events does MIA organise?</span><span class="material-symbols-rounded" aria-hidden="true">add</span></button></h3>
+                <div class="accordion-panel"><p data-i18n="faq.items.types.answer">We plan corporate celebrations, conferences, executive meetings, recurring team events, offsites and bespoke business experiences across Cyprus.</p></div>
+              </article>
+              <article class="accordion-item">
+                <h3><button type="button" aria-expanded="false"><span data-i18n="faq.items.notice.question">How early should we get in touch?</span><span class="material-symbols-rounded" aria-hidden="true">add</span></button></h3>
+                <div class="accordion-panel"><p data-i18n="faq.items.notice.answer">Earlier is always better for venue choice and supplier availability, but we can also assess short-lead projects depending on scope.</p></div>
+              </article>
+              <article class="accordion-item">
+                <h3><button type="button" aria-expanded="false"><span data-i18n="faq.items.scope.question">Can MIA manage only part of an event?</span><span class="material-symbols-rounded" aria-hidden="true">add</span></button></h3>
+                <div class="accordion-panel"><p data-i18n="faq.items.scope.answer">Yes. We can manage the full experience or support a defined area such as venue sourcing, production, gifts or on-site coordination.</p></div>
+              </article>
+              <article class="accordion-item">
+                <h3><button type="button" aria-expanded="false"><span data-i18n="faq.items.location.question">Do you work across Cyprus?</span><span class="material-symbols-rounded" aria-hidden="true">add</span></button></h3>
+                <div class="accordion-panel"><p data-i18n="faq.items.location.answer">Yes. We support events across the island and coordinate the right local partners for each location.</p></div>
+              </article>
+              <article class="accordion-item">
+                <h3><button type="button" aria-expanded="false"><span data-i18n="faq.items.budget.question">Can you work within a defined budget?</span><span class="material-symbols-rounded" aria-hidden="true">add</span></button></h3>
+                <div class="accordion-panel"><p data-i18n="faq.items.budget.answer">Yes. We establish priorities early and recommend the right format, suppliers and production choices for your available budget.</p></div>
+              </article>
+            </div>
+            <div class="faq-column">
+              <article class="accordion-item">
+                <h3><button type="button" aria-expanded="false"><span data-i18n="faq.items.venue.question">Can you help us find a venue?</span><span class="material-symbols-rounded" aria-hidden="true">add</span></button></h3>
+                <div class="accordion-panel"><p data-i18n="faq.items.venue.answer">Yes. We source and compare suitable venues based on location, capacity, style, logistics and budget.</p></div>
+              </article>
+              <article class="accordion-item">
+                <h3><button type="button" aria-expanded="false"><span data-i18n="faq.items.gifts.question">Do you create custom corporate gifts?</span><span class="material-symbols-rounded" aria-hidden="true">add</span></button></h3>
+                <div class="accordion-panel"><p data-i18n="faq.items.gifts.answer">Yes. We develop employee and partner gifting concepts, including sourcing, personalisation, packaging and delivery coordination.</p></div>
+              </article>
+              <article class="accordion-item">
+                <h3><button type="button" aria-expanded="false"><span data-i18n="faq.items.private.question">Do you organise private festive events?</span><span class="material-symbols-rounded" aria-hidden="true">add</span></button></h3>
+                <div class="accordion-panel"><p data-i18n="faq.items.private.answer">Yes. We coordinate selected private celebrations and festive experiences with the same care applied to our corporate work.</p></div>
+              </article>
+              <article class="accordion-item">
+                <h3><button type="button" aria-expanded="false"><span data-i18n="faq.items.day.question">Who is present on the event day?</span><span class="material-symbols-rounded" aria-hidden="true">add</span></button></h3>
+                <div class="accordion-panel"><p data-i18n="faq.items.day.answer">A dedicated MIA coordinator oversees the agreed timeline, suppliers and key moments throughout the event.</p></div>
+              </article>
+              <article class="accordion-item">
+                <h3><button type="button" aria-expanded="false"><span data-i18n="faq.items.start.question">What do you need from us to get started?</span><span class="material-symbols-rounded" aria-hidden="true">add</span></button></h3>
+                <div class="accordion-panel"><p data-i18n="faq.items.start.answer">An approximate date, guest count, location preference, budget range and the outcome or feeling you want to create are enough for an initial conversation.</p></div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-layout">
+          <div class="contact-copy">
+            <p class="eyebrow" data-i18n="contact.eyebrow">Start the conversation</p>
+            <h2 id="contact-title">
+              <span data-i18n="contact.titleStart">Tell us what you are</span><br />
+              <mark data-i18n="contact.titleHighlight">planning next.</mark>
+            </h2>
+            <p data-i18n="contact.text">Share the date, guest count and the feeling you want to create. Maria will help you shape the next step.</p>
+          </div>
+
+          <div class="contact-actions">
+            <a class="contact-card contact-card-whatsapp" href="https://wa.me/35799010282" target="_blank" rel="noreferrer">
+              <span class="contact-card-icon contact-card-icon-whatsapp" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+              <span><small>WhatsApp</small><strong>+357 99 010282</strong></span>
+              <span class="material-symbols-rounded contact-card-arrow" aria-hidden="true">arrow_outward</span>
+            </a>
+            <a class="contact-card contact-card-viber" href="viber://chat?number=%2B35799010282">
+              <span class="contact-card-icon contact-card-icon-viber" aria-hidden="true"><i class="fa-brands fa-viber"></i></span>
+              <span><small>Viber</small><strong>+357 99 010282</strong></span>
+              <span class="material-symbols-rounded contact-card-arrow" aria-hidden="true">arrow_outward</span>
+            </a>
+            <a class="contact-card" href="mailto:info@miaevents.company">
+              <span class="contact-card-icon" aria-hidden="true"><span class="material-symbols-rounded">mail</span></span>
+              <span><small data-i18n="contact.emailLabel">Email</small><strong>info@miaevents.company</strong></span>
+              <span class="material-symbols-rounded contact-card-arrow" aria-hidden="true">arrow_outward</span>
+            </a>
+            <button class="contact-card" type="button" data-booking-open data-service="General Event Consultation">
+              <span class="contact-card-icon" aria-hidden="true"><span class="material-symbols-rounded">calendar_month</span></span>
+              <span><small data-i18n="contact.consultationLabel">Consultation</small><strong data-i18n="contact.consultationValue">Send an event brief</strong></span>
+              <span class="material-symbols-rounded contact-card-arrow" aria-hidden="true">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="#top">
+            <img class="brand-mark" src="/FinalLogo_mia.png" width="344" height="246" alt="" />
+            <span class="brand-name">MIA EVENTS</span>
+          </a>
+          <p data-i18n="footer.tagline">People-first corporate events across Cyprus.</p>
+        </div>
+        <nav aria-label="Footer navigation" data-i18n-aria-label="a11y.footerNav">
+          <a href="#approach" data-i18n="nav.approach">Our approach</a>
+          <a href="#services" data-i18n="nav.services">Services</a>
+          <a href="#faq" data-i18n="nav.faq">FAQ</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <div class="footer-contact">
+          <a href="tel:+35799010282">+357 99 010282</a>
+          <a href="mailto:info@miaevents.company">info@miaevents.company</a>
+          <span>Cyprus</span>
+          <div class="footer-socials" aria-label="Social media" data-i18n-aria-label="footer.socialLabel">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <small>© <span data-current-year></span> MIA EVENTS</small>
+        <button type="button" data-language-switch><span class="material-symbols-rounded" aria-hidden="true">language</span><span data-language-full>Ελληνικά</span></button>
+      </div>
+    </footer>
+
+    <div class="studio17-credit">
+      <a
+        href="https://www.studio17.world"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Website developed and maintained by Studio 17"
+        data-i18n-aria-label="studio17.ariaLabel"
+      >
+        <span data-i18n="studio17.prefix">Developed &amp; maintained by</span>
+        <strong>Studio 17</strong>
+        <span class="material-symbols-rounded studio17-credit-arrow" aria-hidden="true">arrow_outward</span>
+      </a>
     </div>
-  </header>
 
-  <main id="main">
-    <section class="hero shell" id="top" aria-labelledby="hero-title">
-      <div>
-        <p class="eyebrow" data-i18n="heroKicker">MIA EVENTS · New website in development</p>
-        <h1 id="hero-title"><span data-i18n="heroLine1">Something good</span><br><span data-i18n="heroLine2">is</span> <span class="highlight" data-i18n="heroHighlight">coming.</span></h1>
-        <p class="hero-copy" data-i18n="heroCopy">The new MIA EVENTS digital experience is being created. While we build, meet the European studio bringing the strategy, creativity and technology together.</p>
-        <a class="hero-action" href="#studio17"><span data-i18n="heroAction">Meet the studio behind the work</span><span aria-hidden="true">↓</span></a>
-      </div>
-
-      <aside class="build-card" aria-label="Website development status">
-        <span class="build-index">01 · BUILD IN PROGRESS</span>
-        <h2 class="build-title" data-i18n="buildTitle">A new online home is taking shape.</h2>
-        <div class="build-meta">
-          <div class="build-status"><span class="status-dot" aria-hidden="true"></span><span data-i18n="buildStatus">Development active</span></div>
-          <p class="build-note" data-i18n="buildNote">The complete MIA EVENTS website will return when it is ready.</p>
+    <div class="drawer" id="mobile-menu" data-menu hidden>
+      <div class="drawer-backdrop" data-menu-close></div>
+      <aside class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="menu-title">
+        <div class="drawer-header">
+          <strong id="menu-title" data-i18n="nav.navigation">Navigation</strong>
+          <button class="icon-button" type="button" data-menu-close aria-label="Close menu" data-i18n-aria-label="a11y.closeMenu">
+            <span class="material-symbols-rounded" aria-hidden="true">close</span>
+          </button>
+        </div>
+        <nav>
+          <a href="#top" data-i18n="nav.home">Home</a>
+          <a href="#approach" data-i18n="nav.approach">Our approach</a>
+          <a href="#services" data-i18n="nav.services">Services</a>
+          <a href="#faq" data-i18n="nav.faq">FAQ</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <div class="drawer-footer">
+          <a class="button button-whatsapp" href="https://wa.me/35799010282" target="_blank" rel="noreferrer"><i class="fa-brands fa-whatsapp button-brand-icon" aria-hidden="true"></i><span data-i18n="actions.whatsapp">WhatsApp us</span></a>
+          <a class="button button-viber" href="viber://chat?number=%2B35799010282"><i class="fa-brands fa-viber button-brand-icon" aria-hidden="true"></i><span>Viber</span></a>
+          <a href="mailto:info@miaevents.company">info@miaevents.company</a>
         </div>
       </aside>
-    </section>
-
-    <section class="studio-section" id="studio17" aria-labelledby="studio-title">
-      <div class="studio-inner shell">
-        <div>
-          <p class="section-kicker" data-i18n="studioKicker">Created with Studio 17</p>
-          <div class="studio-monogram" aria-hidden="true">S17</div>
-        </div>
-        <div class="studio-copy">
-          <h2 id="studio-title" data-i18n="studioTitle">Strategy, creativity and technology. Connected.</h2>
-          <p data-i18n="studioCopy">Studio 17 is a European multidisciplinary studio bringing strategy, creativity, technology and operations into one connected way of working—helping businesses communicate clearly, stay relevant and grow.</p>
-          <div class="button-row">
-            <a class="button button-primary studio-link" href="https://www.studio17.world/about?utm_source=miaevents.company&utm_medium=referral&utm_campaign=maintenance_page&utm_content=about_studio17" target="_blank" rel="noopener noreferrer" data-track="explore_studio17_about"><span data-i18n="exploreStudio">Explore Studio 17</span><span aria-hidden="true">↗</span></a>
-            <a class="button studio-link" href="https://www.studio17.world/contact?utm_source=miaevents.company&utm_medium=referral&utm_campaign=maintenance_page&utm_content=talk_to_studio17" target="_blank" rel="noopener noreferrer" data-track="talk_to_studio17"><span data-i18n="talkStudio">Talk to Studio 17</span><span aria-hidden="true">↗</span></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="insights shell" id="insights" aria-labelledby="insights-title">
-      <div class="insights-head">
-        <div>
-          <p class="section-kicker" data-i18n="insightsKicker">Selected Studio 17 insights</p>
-          <h2 id="insights-title" data-i18n="insightsTitle">Useful thinking for modern businesses.</h2>
-        </div>
-        <p class="insights-intro" data-i18n="insightsIntro">Practical perspectives on websites, marketing, local discovery and new ways to build digital income.</p>
-      </div>
-
-      <div class="article-grid">
-        <a class="article-card studio-link" href="https://www.studio17.world/insights/what-should-a-business-website-quote-include?utm_source=miaevents.company&utm_medium=referral&utm_campaign=maintenance_page&utm_content=article_website_quote" target="_blank" rel="noopener noreferrer" data-track="article_website_quote">
-          <span class="article-number">01 · WEBSITE</span>
-          <div class="article-body">
-            <h3 data-i18n="article1Title">What should a website quote include? 12 things to check.</h3>
-            <p data-i18n="article1Copy">A practical checklist for comparing scope, deliverables, responsibilities and ongoing costs—not only the headline price.</p>
-          </div>
-          <span class="article-link"><span data-i18n="readArticle">Read article</span><span aria-hidden="true">↗</span></span>
-        </a>
-
-        <a class="article-card studio-link" href="https://www.studio17.world/insights/what-should-social-media-management-include-each-month?utm_source=miaevents.company&utm_medium=referral&utm_campaign=maintenance_page&utm_content=article_social_media" target="_blank" rel="noopener noreferrer" data-track="article_social_media">
-          <span class="article-number">02 · SOCIAL MEDIA</span>
-          <div class="article-body">
-            <h3 data-i18n="article2Title">What should social media management include each month?</h3>
-            <p data-i18n="article2Copy">Understand the planning, production, publishing, replies and reporting behind a properly managed service.</p>
-          </div>
-          <span class="article-link"><span data-i18n="readArticle">Read article</span><span aria-hidden="true">↗</span></span>
-        </a>
-
-        <a class="article-card studio-link" href="https://www.studio17.world/insights/how-to-rank-higher-on-google-maps-cyprus?utm_source=miaevents.company&utm_medium=referral&utm_campaign=maintenance_page&utm_content=article_google_maps" target="_blank" rel="noopener noreferrer" data-track="article_google_maps">
-          <span class="article-number">03 · LOCAL SEO</span>
-          <div class="article-body">
-            <h3 data-i18n="article3Title">How to rank higher on Google Maps in Cyprus.</h3>
-            <p data-i18n="article3Copy">A clear guide to the signals that help local businesses become easier to find.</p>
-          </div>
-          <span class="article-link"><span data-i18n="readArticle">Read article</span><span aria-hidden="true">↗</span></span>
-        </a>
-
-        <a class="article-card studio-link" href="https://www.studio17.world/insights/build-income-stream-selling-digital-services?utm_source=miaevents.company&utm_medium=referral&utm_campaign=maintenance_page&utm_content=article_digital_services" target="_blank" rel="noopener noreferrer" data-track="article_digital_services">
-          <span class="article-number">04 · OPPORTUNITY</span>
-          <div class="article-body">
-            <h3 data-i18n="article4Title">Build an income stream selling digital services—without running an agency.</h3>
-            <p data-i18n="article4Copy">Focus on opportunities and client relationships while Studio 17 handles strategy and delivery.</p>
-          </div>
-          <span class="article-link"><span data-i18n="readArticle">Read article</span><span aria-hidden="true">↗</span></span>
-        </a>
-      </div>
-
-      <a class="all-articles studio-link" href="https://www.studio17.world/news?utm_source=miaevents.company&utm_medium=referral&utm_campaign=maintenance_page&utm_content=view_all_articles" target="_blank" rel="noopener noreferrer" data-track="view_all_articles"><span data-i18n="viewAll">View all articles</span><span aria-hidden="true">↗</span></a>
-    </section>
-
-    <section class="final-cta" aria-labelledby="final-title">
-      <div class="final-inner shell">
-        <h2 id="final-title"><span data-i18n="finalLine1">Have a business problem?</span><br><span class="blue-text" data-i18n="finalLine2">Studio 17</span> <span data-i18n="finalHighlight">builds the solution.</span></h2>
-        <a class="final-button studio-link" href="https://www.studio17.world/contact?utm_source=miaevents.company&utm_medium=referral&utm_campaign=maintenance_page&utm_content=final_cta" target="_blank" rel="noopener noreferrer" data-track="talk_to_studio17_final"><span data-i18n="talkStudio">Talk to Studio 17</span><span aria-hidden="true">↗</span></a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-inner shell">
-      <span>© <span id="year"></span> <strong>MIA EVENTS</strong></span>
-      <span><span data-i18n="footerCredit">Website in development · Created with</span> <a class="studio-link" href="https://www.studio17.world/?utm_source=miaevents.company&utm_medium=referral&utm_campaign=maintenance_page&utm_content=footer" target="_blank" rel="noopener noreferrer" data-track="studio17_footer">Studio 17 ↗</a></span>
     </div>
-  </footer>
 
-  <script type="module" src="/src/maintenance.js"></script>
-</body>
+    <a class="mobile-whatsapp-cta" href="https://wa.me/35799010282" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp us" data-i18n-aria-label="actions.whatsapp">
+      <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+      <span data-i18n="actions.whatsapp">WhatsApp us</span>
+    </a>
+
+    <dialog class="booking-dialog" data-booking-dialog aria-labelledby="booking-title">
+      <button class="dialog-backdrop" type="button" data-booking-close tabindex="-1" aria-label="Close consultation form"></button>
+      <div class="dialog-card">
+        <button class="icon-button dialog-close" type="button" data-booking-close aria-label="Close consultation form" data-i18n-aria-label="a11y.closeDialog">
+          <span class="material-symbols-rounded" aria-hidden="true">close</span>
+        </button>
+        <p class="eyebrow" data-i18n="booking.eyebrow">Your event brief</p>
+        <h2 id="booking-title" data-i18n="booking.title">Book a consultation</h2>
+        <p class="dialog-intro" data-i18n="booking.intro">Complete the essentials and continue the conversation directly on WhatsApp.</p>
+
+        <form data-booking-form>
+          <div class="field">
+            <label for="booking-name" data-i18n="booking.name">Name / organisation</label>
+            <input id="booking-name" name="name" type="text" autocomplete="name" required data-i18n-placeholder="booking.namePlaceholder" placeholder="Your name or company" />
+          </div>
+          <div class="field">
+            <label for="booking-service" data-i18n="booking.service">Service</label>
+            <select id="booking-service" name="service">
+              <option value="General Event Consultation" data-i18n="booking.services.general">General event consultation</option>
+              <option value="Corporate Events & Parties" data-i18n="services.items.events.title">Corporate Events &amp; Parties</option>
+              <option value="Conferences & Business Meetings" data-i18n="services.items.conferences.title">Conferences &amp; Business Meetings</option>
+              <option value="Monthly Events & Happy Hours" data-i18n="services.items.socials.title">Monthly Events &amp; Happy Hours</option>
+              <option value="Venue & Supplier Management" data-i18n="services.items.venue.title">Venue &amp; Supplier Management</option>
+              <option value="Design & Production" data-i18n="services.items.design.title">Design &amp; Production</option>
+              <option value="On-Site Supervision" data-i18n="services.items.onsite.title">On-Site Supervision</option>
+              <option value="Gifts for Employees" data-i18n="services.items.employeeGifts.title">Gifts for Employees</option>
+              <option value="Gifts for Partners" data-i18n="services.items.partnerGifts.title">Gifts for Partners</option>
+              <option value="Festive Private Events" data-i18n="services.items.festive.title">Festive Private Events</option>
+            </select>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="booking-date" data-i18n="booking.date">Estimated date</label>
+              <input id="booking-date" name="date" type="date" />
+            </div>
+            <div class="field">
+              <label for="booking-guests" data-i18n="booking.guests">Guests</label>
+              <input id="booking-guests" name="guests" type="number" min="1" inputmode="numeric" data-i18n-placeholder="booking.guestsPlaceholder" placeholder="e.g. 80" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="booking-details" data-i18n="booking.details">A few details</label>
+            <textarea id="booking-details" name="details" rows="4" data-i18n-placeholder="booking.detailsPlaceholder" placeholder="Location, occasion and anything we should know..."></textarea>
+          </div>
+          <button class="button button-whatsapp button-full" type="submit">
+            <i class="fa-brands fa-whatsapp button-brand-icon" aria-hidden="true"></i>
+            <span data-i18n="booking.submit">Continue on WhatsApp</span>
+          </button>
+          <a class="dialog-email" href="mailto:info@miaevents.company" data-i18n="booking.emailAlternative">Or send us an email instead</a>
+        </form>
+      </div>
+    </dialog>
+  </body>
 </html>
