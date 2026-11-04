@@ -6,7 +6,7 @@ const STORAGE_KEY = "mia-language";
 const translations = {
   en: {
     "meta.title": "MIA EVENTS | Corporate Events in Cyprus",
-    "meta.description": "MIA EVENTS creates people-first corporate events, conferences and business experiences across Cyprus.",
+    "meta.description": "MIA EVENTS brings corporate events to life across Cyprus with thoughtful planning, creative ideas and personal attention at every stage.",
     "a11y.skip": "Skip to main content",
     "a11y.primaryNav": "Primary navigation",
     "a11y.footerNav": "Footer navigation",
@@ -19,6 +19,7 @@ const translations = {
     "a11y.brandIntro": "MIA EVENTS brand introduction",
     "nav.home": "Home",
     "nav.approach": "Our approach",
+    "nav.about": "About Maria",
     "nav.services": "Services",
     "nav.faq": "FAQ",
     "nav.contact": "Contact",
@@ -28,7 +29,7 @@ const translations = {
     "actions.consultation": "Book a consultation",
     "actions.whatsapp": "WhatsApp us",
     "whatsapp.consultationMessage": "Hello MIA EVENTS, I would like to book a consultation for an upcoming event.",
-    "actions.bookService": "Book this service",
+    "actions.bookService": "Enquire about this service",
     "actions.discussGifts": "Discuss your gifts",
     "actions.skipIntro": "Skip intro",
     "hero.experience": "years of experience",
@@ -36,26 +37,32 @@ const translations = {
     "hero.titleSecond": "Experiences",
     "hero.statement": "Designed around",
     "hero.statementStrong": "your people.",
-    "hero.summary": "End-to-end corporate event planning across Cyprus, delivered with personal coordination at every stage.",
+    "hero.summary": "From the first idea to the final detail, we bring corporate events to life across Cyprus — with thoughtful planning, creative ideas and personal attention at every stage.",
     "approach.eyebrow": "Why MIA",
     "approach.titleStart": "Events are about",
     "approach.titleHighlight": "people.",
     "approach.titleEnd": "Everything else should work around them.",
     "proof.experienceTitle": "Years of experience",
-    "proof.experienceText": "Creating and coordinating memorable corporate events.",
+    "proof.experienceText": "A decade of bringing corporate events to life.",
     "proof.endToEndValue": "End-to-end",
-    "proof.endToEndTitle": "One point of contact",
-    "proof.endToEndText": "From concept and suppliers to production and supervision.",
+    "proof.endToEndTitle": "Seamless Planning",
+    "proof.endToEndText": "Every detail considered, from concept to completion.",
     "proof.cyprusValue": "Cyprus-wide",
-    "proof.cyprusTitle": "Wherever your team meets",
-    "proof.cyprusText": "Events supported across the island.",
+    "proof.cyprusTitle": "Island-wide Expertise",
+    "proof.cyprusText": "Bringing people together wherever your event takes place.",
     "proof.personalValue": "Personal",
-    "proof.personalTitle": "Coordination that stays close",
-    "proof.personalText": "Direct communication throughout the project.",
+    "proof.personalTitle": "A Dedicated Partner",
+    "proof.personalText": "One trusted contact, from our first conversation to the final moment.",
+    "about.eyebrow": "The person behind MIA",
+    "about.titleStart": "Personally Planned.",
+    "about.titleHighlight": "Thoughtfully Delivered.",
+    "about.textOne": "Behind MIA EVENTS is Maria, bringing over a decade of experience and a hands-on approach to corporate event planning.",
+    "about.textTwo": "With a focus on people, details and meaningful experiences, Maria works closely with each client to turn ideas into events that feel effortless, personal and beautifully considered.",
+    "about.portraitLabel": "Maria · MIA EVENTS",
     "gallery.eyebrow": "Made for meaningful moments",
-    "gallery.titlePrefix": "Elevating",
-    "gallery.titleHighlight": "enterprise",
-    "gallery.titleEnd": "and executive gatherings.",
+    "gallery.titleStart": "Every Occasion.",
+    "gallery.titleHighlight": "A Thoughtful Experience.",
+    "gallery.description": "From conferences and celebrations to team gatherings and executive events, we create experiences that bring people together.",
     "gallery.images.conference": "Corporate conference with a keynote stage",
     "gallery.images.gala": "Formal corporate dinner setting",
     "gallery.images.social": "Team enjoying a relaxed social gathering",
@@ -71,6 +78,9 @@ const translations = {
     "services.titleHighlight": "complete",
     "services.titleSuffix": "service suite,",
     "services.titleEnd": "shaped around your objectives.",
+    "services.groups.events": "Events & Experiences",
+    "services.groups.planning": "Planning & Production",
+    "services.groups.gifting": "Corporate Gifting",
     "services.items.events.title": "Corporate Events & Parties",
     "services.items.events.text": "Galas, team celebrations, milestone events and company parties designed around your culture.",
     "services.items.conferences.title": "Conferences & Business Meetings",
@@ -147,7 +157,7 @@ const translations = {
   },
   el: {
     "meta.title": "MIA EVENTS | Εταιρικές Εκδηλώσεις στην Κύπρο",
-    "meta.description": "Η MIA EVENTS δημιουργεί ανθρωποκεντρικές εταιρικές εκδηλώσεις, συνέδρια και επαγγελματικές εμπειρίες σε όλη την Κύπρο.",
+    "meta.description": "Η MIA EVENTS ζωντανεύει εταιρικές εκδηλώσεις σε όλη την Κύπρο με προσεκτικό σχεδιασμό, δημιουργικές ιδέες και προσωπική φροντίδα σε κάθε στάδιο.",
     "a11y.skip": "Μετάβαση στο κύριο περιεχόμενο",
     "a11y.primaryNav": "Κύρια πλοήγηση",
     "a11y.footerNav": "Πλοήγηση υποσέλιδου",
@@ -160,6 +170,7 @@ const translations = {
     "a11y.brandIntro": "Εισαγωγή της MIA EVENTS",
     "nav.home": "Αρχική",
     "nav.approach": "Η φιλοσοφία μας",
+    "nav.about": "Σχετικά με τη Μαρία",
     "nav.services": "Υπηρεσίες",
     "nav.faq": "Συχνές ερωτήσεις",
     "nav.contact": "Επικοινωνία",
@@ -169,7 +180,7 @@ const translations = {
     "actions.consultation": "Κλείστε συμβουλευτική",
     "actions.whatsapp": "Μιλήστε μας στο WhatsApp",
     "whatsapp.consultationMessage": "Γεια σας MIA EVENTS, θα ήθελα να κλείσω μια συμβουλευτική για μια επερχόμενη εκδήλωση.",
-    "actions.bookService": "Κλείστε την υπηρεσία",
+    "actions.bookService": "Ρωτήστε για αυτή την υπηρεσία",
     "actions.discussGifts": "Συζητήστε τα δώρα σας",
     "actions.skipIntro": "Παράλειψη εισαγωγής",
     "hero.experience": "χρόνια εμπειρίας",
@@ -177,26 +188,32 @@ const translations = {
     "hero.titleSecond": "Εμπειρίες",
     "hero.statement": "Σχεδιασμένες γύρω από",
     "hero.statementStrong": "τους ανθρώπους σας.",
-    "hero.summary": "Ολοκληρωμένος σχεδιασμός εταιρικών εκδηλώσεων σε όλη την Κύπρο, με προσωπικό συντονισμό σε κάθε στάδιο.",
+    "hero.summary": "Από την πρώτη ιδέα μέχρι την τελευταία λεπτομέρεια, ζωντανεύουμε εταιρικές εκδηλώσεις σε όλη την Κύπρο — με προσεκτικό σχεδιασμό, δημιουργικές ιδέες και προσωπική φροντίδα σε κάθε στάδιο.",
     "approach.eyebrow": "Γιατί MIA",
     "approach.titleStart": "Οι εκδηλώσεις αφορούν τους",
     "approach.titleHighlight": "ανθρώπους.",
     "approach.titleEnd": "Όλα τα υπόλοιπα πρέπει να λειτουργούν γύρω τους.",
     "proof.experienceTitle": "Χρόνια εμπειρίας",
-    "proof.experienceText": "Δημιουργούμε και συντονίζουμε αξέχαστες εταιρικές εκδηλώσεις.",
+    "proof.experienceText": "Μια δεκαετία εμπειρίας στο να ζωντανεύουμε εταιρικές εκδηλώσεις.",
     "proof.endToEndValue": "Από την αρχή ως το τέλος",
-    "proof.endToEndTitle": "Ένα σημείο επικοινωνίας",
-    "proof.endToEndText": "Από την ιδέα και τους προμηθευτές μέχρι την παραγωγή και την επίβλεψη.",
+    "proof.endToEndTitle": "Άψογος Σχεδιασμός",
+    "proof.endToEndText": "Κάθε λεπτομέρεια μελετημένη, από την ιδέα μέχρι την ολοκλήρωση.",
     "proof.cyprusValue": "Σε όλη την Κύπρο",
-    "proof.cyprusTitle": "Όπου κι αν συναντιέται η ομάδα σας",
-    "proof.cyprusText": "Υποστήριξη εκδηλώσεων σε ολόκληρο το νησί.",
+    "proof.cyprusTitle": "Εξειδίκευση σε Όλη την Κύπρο",
+    "proof.cyprusText": "Φέρνουμε τους ανθρώπους κοντά, όπου κι αν πραγματοποιείται η εκδήλωσή σας.",
     "proof.personalValue": "Προσωπικά",
-    "proof.personalTitle": "Συντονισμός που παραμένει κοντά σας",
-    "proof.personalText": "Άμεση επικοινωνία καθ’ όλη τη διάρκεια του έργου.",
+    "proof.personalTitle": "Ένας Αφοσιωμένος Συνεργάτης",
+    "proof.personalText": "Ένα πρόσωπο εμπιστοσύνης, από την πρώτη μας συζήτηση μέχρι την τελευταία στιγμή.",
+    "about.eyebrow": "Το πρόσωπο πίσω από τη MIA",
+    "about.titleStart": "Προσωπικός Σχεδιασμός.",
+    "about.titleHighlight": "Προσεγμένη Υλοποίηση.",
+    "about.textOne": "Πίσω από τη MIA EVENTS βρίσκεται η Μαρία, με περισσότερα από δέκα χρόνια εμπειρίας και μια άμεση, προσωπική προσέγγιση στον σχεδιασμό εταιρικών εκδηλώσεων.",
+    "about.textTwo": "Με επίκεντρο τους ανθρώπους, τις λεπτομέρειες και τις εμπειρίες με ουσία, η Μαρία συνεργάζεται στενά με κάθε πελάτη για να μετατρέπει τις ιδέες σε εκδηλώσεις που μοιάζουν αβίαστες, προσωπικές και όμορφα μελετημένες.",
+    "about.portraitLabel": "Μαρία · MIA EVENTS",
     "gallery.eyebrow": "Για στιγμές με σημασία",
-    "gallery.titlePrefix": "Αναβαθμίζουμε τις",
-    "gallery.titleHighlight": "εταιρικές",
-    "gallery.titleEnd": "και διοικητικές συναντήσεις.",
+    "gallery.titleStart": "Κάθε Περίσταση.",
+    "gallery.titleHighlight": "Μια Προσεγμένη Εμπειρία.",
+    "gallery.description": "Από συνέδρια και εορτασμούς έως συναντήσεις ομάδων και εκδηλώσεις στελεχών, δημιουργούμε εμπειρίες που φέρνουν τους ανθρώπους κοντά.",
     "gallery.images.conference": "Εταιρικό συνέδριο με κεντρική σκηνή",
     "gallery.images.gala": "Επίσημο εταιρικό δείπνο",
     "gallery.images.social": "Ομάδα σε χαλαρή κοινωνική συνάντηση",
@@ -212,6 +229,9 @@ const translations = {
     "services.titleHighlight": "πλήρες",
     "services.titleSuffix": "σύνολο υπηρεσιών,",
     "services.titleEnd": "διαμορφωμένο γύρω από τους στόχους σας.",
+    "services.groups.events": "Εκδηλώσεις & Εμπειρίες",
+    "services.groups.planning": "Σχεδιασμός & Παραγωγή",
+    "services.groups.gifting": "Εταιρικά Δώρα",
     "services.items.events.title": "Εταιρικές Εκδηλώσεις & Πάρτι",
     "services.items.events.text": "Gala, γιορτές ομάδων, σημαντικές επέτειοι και εταιρικά πάρτι σχεδιασμένα γύρω από την κουλτούρα σας.",
     "services.items.conferences.title": "Συνέδρια & Επαγγελματικές Συναντήσεις",
@@ -287,6 +307,14 @@ const translations = {
     "booking.messageDetails": "Λεπτομέρειες"
   }
 };
+
+function trackEvent(eventName, parameters = {}) {
+  if (typeof window.gtag !== "function") return;
+  window.gtag("event", eventName, {
+    language: currentLanguage,
+    ...parameters
+  });
+}
 
 const introOverlay = document.querySelector("[data-intro]");
 const introLetters = [...document.querySelectorAll(".intro-letter")];
@@ -525,7 +553,12 @@ function closeBooking() {
 }
 
 document.querySelectorAll("[data-booking-open]").forEach((button) => {
-  button.addEventListener("click", () => openBooking(button.dataset.service));
+  button.addEventListener("click", () => {
+    const service = button.dataset.service || "General Event Consultation";
+    const source = button.dataset.conversionSource || (button.closest(".service-card") ? "service-card" : "general-cta");
+    trackEvent(button.closest(".service-card") ? "service_enquiry_open" : "consultation_open", { service, source });
+    openBooking(service);
+  });
 });
 document.querySelectorAll("[data-booking-close]").forEach((button) => button.addEventListener("click", closeBooking));
 bookingDialog?.addEventListener("cancel", () => document.body.classList.remove("is-locked"));
@@ -538,6 +571,7 @@ bookingForm?.addEventListener("submit", (event) => {
   const t = translations[currentLanguage];
   const selectedOption = serviceField?.selectedOptions?.[0];
   const service = selectedOption?.textContent?.trim() || data.get("service");
+  trackEvent("consultation_whatsapp_continue", { service });
   const lines = [
     t["booking.message"],
     "",
@@ -549,6 +583,18 @@ bookingForm?.addEventListener("submit", (event) => {
   if (data.get("details")) lines.push(`${t["booking.messageDetails"]}: ${data.get("details")}`);
 
   window.open(`https://wa.me/${PHONE}?text=${encodeURIComponent(lines.join("\n"))}`, "_blank", "noopener,noreferrer");
+});
+
+document.querySelectorAll('a[href^="https://wa.me/"]').forEach((link) => {
+  link.addEventListener("click", () => trackEvent("whatsapp_click", { source: link.className || "link" }));
+});
+
+document.querySelectorAll('a[href^="mailto:"]').forEach((link) => {
+  link.addEventListener("click", () => trackEvent("email_click", { source: link.className || "link" }));
+});
+
+document.querySelectorAll('a[href^="tel:"]').forEach((link) => {
+  link.addEventListener("click", () => trackEvent("phone_click", { source: link.className || "link" }));
 });
 
 document.addEventListener("keydown", (event) => {
