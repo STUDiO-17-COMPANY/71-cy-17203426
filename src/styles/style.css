@@ -277,12 +277,10 @@
 
   .approach { background: var(--color-white); }
   .approach mark { background: var(--color-orange); }
-  .proof-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(1.5rem, 4vw, 3.25rem); }
+  .proof-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: clamp(1.25rem, 3vw, 2.75rem); }
   .proof-item { position: relative; padding-top: 1.5rem; border-top: 1px solid var(--color-line); }
-  .proof-item > .material-symbols-rounded { position: absolute; top: 1.5rem; right: 0; color: var(--color-orange); font-size: 1.75rem; }
-  .proof-item strong { display: block; max-width: 80%; color: var(--color-purple); font-size: clamp(1.8rem, 3vw, 2.8rem); font-weight: 300; line-height: 1.05; }
-  .proof-item h3 { margin-top: 1.7rem; font-size: 1.02rem; }
-  .proof-item p { margin-top: .55rem; color: var(--color-muted); font-size: .95rem; }
+  .proof-item > .material-symbols-rounded { display: block; color: var(--color-orange); font-size: 1.75rem; }
+  .proof-item h3 { margin-top: 1rem; color: var(--color-purple); font-size: clamp(1.1rem, 1.8vw, 1.45rem); }
 
   .about { overflow: hidden; background: var(--color-stone); }
   .about-layout { display: grid; grid-template-columns: minmax(20rem, .85fr) minmax(0, 1.15fr); align-items: center; gap: clamp(3rem, 8vw, 7rem); }
@@ -316,6 +314,8 @@
   }
   .gallery-track::-webkit-scrollbar { display: none; }
   .gallery-card { position: relative; flex: 0 0 clamp(17rem, 27vw, 24rem); height: clamp(24rem, 45vw, 34rem); overflow: hidden; border-radius: var(--radius-lg); background: var(--color-stone); scroll-snap-align: start; }
+  .gallery-card:has(.gallery-placeholder) { background: linear-gradient(150deg, var(--color-purple-soft), var(--color-purple-deep)); }
+  .gallery-placeholder { position: absolute; inset: 0; display: grid; place-items: center; color: var(--color-white); font-size: 3rem; }
   .gallery-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 650ms cubic-bezier(.2, .8, .2, 1); }
   .gallery-card::after { position: absolute; inset: 45% 0 0; background: linear-gradient(transparent, rgb(17 16 21 / .78)); content: ""; }
   .gallery-card:hover img { transform: scale(1.045); }
@@ -442,13 +442,13 @@
   .booking-dialog { width: 100%; max-width: none; height: 100%; max-height: none; margin: 0; border: 0; background: transparent; padding: 1rem; }
   .booking-dialog::backdrop { background: transparent; }
   .dialog-backdrop { position: fixed; z-index: -1; inset: 0; width: 100%; height: 100%; background: rgb(17 16 21 / .65); backdrop-filter: blur(6px); }
-  .dialog-card { position: relative; width: min(100%, 35rem); max-height: calc(100dvh - 2rem); overflow-y: auto; margin: max(1rem, 5vh) auto; border-radius: var(--radius-lg); background: var(--color-white); padding: clamp(1.5rem, 5vw, 2.5rem); box-shadow: 0 2rem 7rem rgb(17 16 21 / .35); }
+  .dialog-card { position: relative; width: min(100%, 42rem); max-height: calc(100dvh - 2rem); overflow-y: auto; margin: max(1rem, 5vh) auto; border-radius: var(--radius-lg); background: var(--color-white); padding: clamp(1.5rem, 5vw, 2.5rem); box-shadow: 0 2rem 7rem rgb(17 16 21 / .35); }
   .dialog-close { position: absolute; top: 1rem; right: 1rem; }
   .dialog-card h2 { margin-top: .5rem; font-size: clamp(2rem, 6vw, 3rem); }
   .dialog-intro { margin: .8rem 3rem 1.7rem 0; color: var(--color-muted); }
   .dialog-card form { display: grid; gap: 1rem; }
   .field { display: grid; gap: .35rem; }
-  .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .field-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
   .field label { color: #45424a; font-size: .78rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
   .field input, .field select, .field textarea { width: 100%; border: 1px solid transparent; border-radius: var(--radius-sm); background: var(--color-stone); color: var(--color-ink); padding: .8rem .95rem; transition: background var(--transition), border-color var(--transition), box-shadow var(--transition); }
   .field textarea { resize: vertical; }
@@ -515,7 +515,6 @@
     .proof-grid, .service-grid, .service-grid.service-grid-four, .service-grid.service-grid-two, .faq-grid { grid-template-columns: 1fr; }
     .proof-grid { gap: 0; }
     .proof-item { min-height: 0; padding: 1.4rem 0 1.65rem; }
-    .proof-item strong { font-size: 2.15rem; }
     .proof-item h3 { margin-top: .9rem; }
     .service-grid { gap: .75rem; }
     .service-card { min-height: 0; border-radius: 1.4rem; padding: 1.35rem; }
