@@ -122,17 +122,8 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.webmanifest" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,300,0,0&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="preload" href="/fonts/jost-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/material-symbols-rounded.woff2" as="font" type="font/woff2" crossorigin />
     <script>document.documentElement.classList.replace('no-js', 'js');</script>
     <script type="module" src="/src/scripts/main.js"></script>
   </head>
@@ -176,13 +167,10 @@
     <main id="main">
       <section class="hero" id="top" aria-labelledby="hero-title">
         <div class="hero-media" aria-hidden="true">
-          <img
-            src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=2200&q=82"
-            alt=""
-            width="2200"
-            height="1467"
-            fetchpriority="high"
-          />
+          <picture>
+            <source media="(max-width: 45rem)" srcset="/photos/hero-mobile.webp" width="768" height="1024" />
+            <img src="/photos/hero-desktop.webp" width="1600" height="1200" alt="" fetchpriority="high" />
+          </picture>
         </div>
 
         <div class="container hero-inner">
@@ -254,12 +242,8 @@
 
       <section class="section about" id="about" aria-labelledby="about-title">
         <div class="container about-layout">
-          <div class="about-portrait-frame" aria-hidden="true">
-            <div class="about-portrait-placeholder">
-              <span class="about-monogram">M</span>
-              <span class="about-portrait-line"></span>
-              <small data-i18n="about.portraitLabel">Maria · MIA EVENTS</small>
-            </div>
+          <div class="about-portrait-frame">
+            <img class="about-portrait" src="/photos/about-maria.webp" width="840" height="1120" loading="lazy" decoding="async" alt="Maria seated in front of illuminated Christmas trees" data-i18n-alt="about.portraitAlt" />
           </div>
           <div class="about-copy">
             <p class="eyebrow" data-i18n="about.eyebrow">About MIA EVENTS</p>
@@ -277,7 +261,7 @@
         </div>
       </section>
 
-      <section class="section gallery-section" aria-labelledby="gallery-title">
+      <section class="section gallery-section" id="work" aria-labelledby="gallery-title">
         <div class="container">
           <div class="section-heading-row">
             <div class="section-heading">
@@ -285,7 +269,7 @@
               <h2 id="gallery-title">
                 <span data-i18n="gallery.titleStart">Our Work</span>
               </h2>
-              <p class="gallery-intro" data-i18n="gallery.description">Explore the types of events we plan across Cyprus. Event photographs will be added here.</p>
+              <p class="gallery-intro" data-i18n="gallery.description">Explore the types of events we plan across Cyprus.</p>
             </div>
             <div class="gallery-controls" aria-label="Gallery controls" data-i18n-aria-label="a11y.galleryControls">
               <button class="icon-button" type="button" data-gallery-previous aria-label="Previous category" data-i18n-aria-label="a11y.previous">
@@ -300,20 +284,30 @@
 
         <div class="gallery-track" data-gallery-track tabindex="0">
           <figure class="gallery-card" data-work-category="gala">
-            <span class="material-symbols-rounded gallery-placeholder" aria-hidden="true">celebration</span>
-            <figcaption data-i18n="gallery.captions.gala">Corporate Events &amp; Galas</figcaption>
+            <img src="/photos/work-corporate-gala-ai-retouched.webp" width="800" height="1000" loading="lazy" decoding="async" alt="Gala table with white flowers, glassware and candles" data-i18n-alt="gallery.alt.gala" />
+            <figcaption>
+              <span data-i18n="gallery.captions.gala">Corporate Events &amp; Galas</span>
+              <small data-i18n="gallery.credit.gala">AI-retouched photo</small>
+            </figcaption>
           </figure>
           <figure class="gallery-card" data-work-category="conference">
-            <span class="material-symbols-rounded gallery-placeholder" aria-hidden="true">co_present</span>
-            <figcaption data-i18n="gallery.captions.conference">Conferences &amp; Business Meetings</figcaption>
+            <img src="/photos/work-conference-ai-illustration.webp" width="800" height="1000" loading="lazy" decoding="async" alt="Illustration of a conference room set up for a panel" data-i18n-alt="gallery.alt.conference" />
+            <figcaption>
+              <span data-i18n="gallery.captions.conference">Conferences &amp; Business Meetings</span>
+              <small data-i18n="gallery.credit.conference">AI-generated illustration</small>
+            </figcaption>
           </figure>
           <figure class="gallery-card" data-work-category="social">
-            <span class="material-symbols-rounded gallery-placeholder" aria-hidden="true">groups</span>
-            <figcaption data-i18n="gallery.captions.social">Team Events &amp; Employee Experiences</figcaption>
+            <img src="/photos/work-team-events-v2.webp" width="800" height="1000" loading="lazy" decoding="async" alt="Participants taking part in a team activity on an outdoor sports field" data-i18n-alt="gallery.alt.social" />
+            <figcaption>
+              <span data-i18n="gallery.captions.social">Team Events &amp; Employee Experiences</span>
+            </figcaption>
           </figure>
           <figure class="gallery-card" data-work-category="festive">
-            <span class="material-symbols-rounded gallery-placeholder" aria-hidden="true">festival</span>
-            <figcaption data-i18n="gallery.captions.festive">Corporate Festive Celebrations</figcaption>
+            <img src="/photos/work-festive-celebrations.webp" width="800" height="1000" loading="lazy" decoding="async" alt="Stage lights and a crowd at a Christmas party" data-i18n-alt="gallery.alt.festive" />
+            <figcaption>
+              <span data-i18n="gallery.captions.festive">Corporate Festive Celebrations</span>
+            </figcaption>
           </figure>
         </div>
       </section>

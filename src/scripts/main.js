@@ -60,10 +60,16 @@ const translations = {
     "about.titleHighlight": "Thoughtfully Delivered.",
     "about.textOne": "MIA EVENTS plans and manages corporate events across Cyprus. Maria brings over a decade of experience and a hands-on approach to every project.",
     "about.textTwo": "With a focus on people, details and meaningful experiences, Maria works closely with each client to turn ideas into events that feel effortless, personal and beautifully considered.",
-    "about.portraitLabel": "Maria · MIA EVENTS",
     "gallery.eyebrow": "Made for meaningful moments",
     "gallery.titleStart": "Our Work",
-    "gallery.description": "Explore the types of events we plan across Cyprus. Event photographs will be added here.",
+    "gallery.description": "Explore the types of events we plan across Cyprus.",
+    "about.portraitAlt": "Maria seated in front of illuminated Christmas trees",
+    "gallery.alt.gala": "Gala table with white flowers, glassware and candles",
+    "gallery.alt.conference": "Illustration of a conference room set up for a panel",
+    "gallery.alt.social": "Participants taking part in a team activity on an outdoor sports field",
+    "gallery.alt.festive": "Stage lights and a crowd at a Christmas party",
+    "gallery.credit.gala": "AI-retouched photo",
+    "gallery.credit.conference": "AI-generated illustration",
     "gallery.captions.conference": "Conferences & Business Meetings",
     "gallery.captions.gala": "Corporate Events & Galas",
     "gallery.captions.social": "Team Events & Employee Experiences",
@@ -197,10 +203,16 @@ const translations = {
     "about.titleHighlight": "Προσεγμένη Υλοποίηση.",
     "about.textOne": "Η MIA EVENTS σχεδιάζει και διαχειρίζεται εταιρικές εκδηλώσεις σε όλη την Κύπρο. Η Μαρία φέρνει σε κάθε έργο πάνω από δέκα χρόνια εμπειρίας και προσωπική συμμετοχή.",
     "about.textTwo": "Με επίκεντρο τους ανθρώπους, τις λεπτομέρειες και τις εμπειρίες με ουσία, η Μαρία συνεργάζεται στενά με κάθε πελάτη για να μετατρέπει τις ιδέες σε εκδηλώσεις που μοιάζουν αβίαστες, προσωπικές και όμορφα μελετημένες.",
-    "about.portraitLabel": "Μαρία · MIA EVENTS",
     "gallery.eyebrow": "Για στιγμές με σημασία",
     "gallery.titleStart": "Η δουλειά μας",
-    "gallery.description": "Δείτε τα είδη εκδηλώσεων που οργανώνουμε σε όλη την Κύπρο. Εδώ θα προστεθούν φωτογραφίες εκδηλώσεων.",
+    "gallery.description": "Δείτε τα είδη εκδηλώσεων που οργανώνουμε σε όλη την Κύπρο.",
+    "about.portraitAlt": "Η Μαρία καθισμένη μπροστά σε φωτισμένα χριστουγεννιάτικα δέντρα",
+    "gallery.alt.gala": "Τραπέζι γκαλά με λευκά λουλούδια, ποτήρια και κεριά",
+    "gallery.alt.conference": "Απεικόνιση αίθουσας συνεδρίου διαμορφωμένης για συζήτηση πάνελ",
+    "gallery.alt.social": "Συμμετέχοντες σε ομαδική δραστηριότητα σε υπαίθριο γήπεδο",
+    "gallery.alt.festive": "Φώτα σκηνής και κοινό σε χριστουγεννιάτικη γιορτή",
+    "gallery.credit.gala": "Φωτογραφία με επεξεργασία AI",
+    "gallery.credit.conference": "Εικόνα που δημιουργήθηκε με AI",
     "gallery.captions.conference": "Συνέδρια & επαγγελματικές συναντήσεις",
     "gallery.captions.gala": "Εταιρικές εκδηλώσεις & γκαλά",
     "gallery.captions.social": "Ομαδικές εκδηλώσεις & εμπειρίες εργαζομένων",
@@ -292,10 +304,10 @@ const introOverlay = document.querySelector("[data-intro]");
 const introLetters = [...document.querySelectorAll(".intro-letter")];
 const introSubline = document.querySelector(".intro-subline");
 const introImages = [
-  "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1400&q=82",
-  "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1400&q=82",
-  "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=1400&q=82",
-  "https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1400&q=82"
+  "/photos/intro-1.webp",
+  "/photos/intro-2.webp",
+  "/photos/intro-3.webp",
+  "/photos/intro-4.webp"
 ];
 let introTimer;
 let introImageTimer;
