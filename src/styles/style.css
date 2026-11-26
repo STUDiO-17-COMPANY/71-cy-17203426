@@ -354,14 +354,25 @@
     scrollbar-width: none;
   }
   .gallery-track::-webkit-scrollbar { display: none; }
-  .gallery-card { position: relative; flex: 0 0 clamp(17rem, 27vw, 24rem); height: clamp(24rem, 45vw, 34rem); overflow: hidden; border-radius: var(--radius-lg); background: var(--color-stone); scroll-snap-align: start; }
-  .gallery-card:has(.gallery-placeholder) { background: linear-gradient(150deg, var(--color-purple-soft), var(--color-purple-deep)); }
-  .gallery-placeholder { position: absolute; inset: 0; display: grid; place-items: center; color: var(--color-white); font-size: 3rem; }
+  .gallery-card { position: relative; flex: 0 0 clamp(17rem, 27vw, 24rem); height: clamp(24rem, 45vw, 34rem); overflow: hidden; border-radius: var(--radius-lg); background: var(--color-stone); padding: 0; text-align: start; scroll-snap-align: start; }
+  .gallery-card:focus-visible { outline-color: var(--color-white); outline-offset: -6px; }
   .gallery-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 650ms cubic-bezier(.2, .8, .2, 1); }
   .gallery-card::after { position: absolute; inset: 45% 0 0; background: linear-gradient(transparent, rgb(17 16 21 / .78)); content: ""; }
   .gallery-card:hover img { transform: scale(1.045); }
-  .gallery-card figcaption { position: absolute; z-index: 1; right: 1.5rem; bottom: 1.5rem; left: 1.5rem; color: var(--color-white); font-size: 1.15rem; font-weight: 500; }
-  .gallery-card figcaption small { display: block; margin-top: .35rem; font-size: .78rem; font-weight: 400; }
+  .gallery-card-caption { position: absolute; z-index: 1; right: 1.5rem; bottom: 1.5rem; left: 1.5rem; color: var(--color-white); font-size: 1.15rem; font-weight: 500; }
+  .gallery-card-caption small { display: block; margin-top: .35rem; font-size: .9rem; font-weight: 400; }
+  .portfolio-dialog { width: min(60rem, calc(100vw - 2rem)); max-height: 90dvh; overscroll-behavior: contain; border: 0; border-radius: var(--radius-lg); background: var(--color-white); color: var(--color-ink); padding: clamp(1rem, 3vw, 2rem); }
+  .portfolio-dialog::backdrop { background: rgb(17 16 21 / .72); }
+  .portfolio-dialog-header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; }
+  .portfolio-dialog-header h2 { font-size: clamp(1.45rem, 4vw, 2.4rem); }
+  .album-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr)); gap: .75rem; }
+  .album-grid button { overflow: hidden; border-radius: .75rem; background: var(--color-stone); padding: 0; }
+  .album-grid img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+  .album-more { display: flex; margin: 1rem auto 0; }
+  .album-more[hidden] { display: none; }
+  .photo-dialog { width: min(64rem, calc(100vw - 2rem)); }
+  .photo-dialog > img { display: block; width: 100%; height: min(60dvh, 40rem); object-fit: contain; border-radius: .75rem; background: var(--color-stone); }
+  .photo-controls { display: flex; justify-content: center; gap: .75rem; margin-top: .75rem; }
 
   .services { background: var(--color-white); }
   .services-heading { margin: 0 0 clamp(3rem, 6vw, 5rem); text-align: left; }
@@ -551,7 +562,7 @@
     .gallery-section { padding-top: 4.25rem; }
     .gallery-track { margin-top: 2.25rem; padding-left: 1rem; scroll-padding-left: 1rem; }
     .gallery-card { height: auto; aspect-ratio: 4 / 5; flex-basis: 80vw; border-radius: 1.4rem; }
-    .gallery-card figcaption { right: 1.1rem; bottom: 1.1rem; left: 1.1rem; }
+    .gallery-card-caption { right: 1.1rem; bottom: 1.1rem; left: 1.1rem; }
     .proof-grid, .service-grid, .service-grid.service-grid-four, .service-grid.service-grid-two, .faq-grid { grid-template-columns: 1fr; }
     .proof-grid { gap: 0; }
     .proof-item { min-height: 0; padding: 1.4rem 0 1.65rem; }

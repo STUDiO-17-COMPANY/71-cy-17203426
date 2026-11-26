@@ -64,13 +64,14 @@ const translations = {
     "gallery.titleStart": "Our Work",
     "gallery.description": "Explore the types of events we plan across Cyprus.",
     "about.portraitAlt": "Maria seated in front of illuminated Christmas trees",
-    "gallery.alt.gala": "Gala table with white flowers, glassware and candles",
-    "gallery.alt.conference": "Illustration of a conference room set up for a panel",
-    "gallery.alt.social": "Participants taking part in a team activity on an outdoor sports field",
-    "gallery.alt.festive": "Stage lights and a crowd at a Christmas party",
-    "gallery.credit.gala": "AI-retouched photo",
-    "gallery.credit.conference": "AI-generated illustration",
-    "gallery.captions.conference": "Conferences & Business Meetings",
+    "gallery.captions.summer": "Summer Events",
+    "gallery.openAlbum": "View photos",
+    "gallery.closeAlbum": "Close album",
+    "gallery.loadMore": "Load more",
+    "gallery.photo": "Album photo",
+    "gallery.closePhoto": "Close photo",
+    "gallery.previousPhoto": "Previous photo",
+    "gallery.nextPhoto": "Next photo",
     "gallery.captions.gala": "Corporate Events & Galas",
     "gallery.captions.social": "Team Events & Employee Experiences",
     "services.eyebrow": "Our expertise",
@@ -207,13 +208,14 @@ const translations = {
     "gallery.titleStart": "Η δουλειά μας",
     "gallery.description": "Δείτε τα είδη εκδηλώσεων που οργανώνουμε σε όλη την Κύπρο.",
     "about.portraitAlt": "Η Μαρία καθισμένη μπροστά σε φωτισμένα χριστουγεννιάτικα δέντρα",
-    "gallery.alt.gala": "Τραπέζι γκαλά με λευκά λουλούδια, ποτήρια και κεριά",
-    "gallery.alt.conference": "Απεικόνιση αίθουσας συνεδρίου διαμορφωμένης για συζήτηση πάνελ",
-    "gallery.alt.social": "Συμμετέχοντες σε ομαδική δραστηριότητα σε υπαίθριο γήπεδο",
-    "gallery.alt.festive": "Φώτα σκηνής και κοινό σε χριστουγεννιάτικη γιορτή",
-    "gallery.credit.gala": "Φωτογραφία με επεξεργασία AI",
-    "gallery.credit.conference": "Εικόνα που δημιουργήθηκε με AI",
-    "gallery.captions.conference": "Συνέδρια & επαγγελματικές συναντήσεις",
+    "gallery.captions.summer": "Καλοκαιρινές εκδηλώσεις",
+    "gallery.openAlbum": "Προβολή φωτογραφιών",
+    "gallery.closeAlbum": "Κλείσιμο άλμπουμ",
+    "gallery.loadMore": "Περισσότερες φωτογραφίες",
+    "gallery.photo": "Φωτογραφία άλμπουμ",
+    "gallery.closePhoto": "Κλείσιμο φωτογραφίας",
+    "gallery.previousPhoto": "Προηγούμενη φωτογραφία",
+    "gallery.nextPhoto": "Επόμενη φωτογραφία",
     "gallery.captions.gala": "Εταιρικές εκδηλώσεις & γκαλά",
     "gallery.captions.social": "Ομαδικές εκδηλώσεις & εμπειρίες εργαζομένων",
     "services.eyebrow": "Η εξειδίκευσή μας",
@@ -489,6 +491,76 @@ const scrollGallery = (direction) => {
 };
 document.querySelector("[data-gallery-previous]")?.addEventListener("click", () => scrollGallery(-1));
 document.querySelector("[data-gallery-next]")?.addEventListener("click", () => scrollGallery(1));
+
+const albumSizes = { gala: 4, summer: 8, social: 8, festive: 8 };
+const albumDialog = document.querySelector("[data-album-dialog]");
+const albumTitle = albumDialog.querySelector("[data-album-title]");
+const albumGrid = albumDialog.querySelector("[data-album-grid]");
+const albumMore = albumDialog.querySelector("[data-album-more]");
+const photoDialog = document.querySelector("[data-photo-dialog]");
+const photoCaption = photoDialog.querySelector("[data-photo-caption]");
+const photoImage = photoDialog.querySelector("[data-photo-image]");
+const previousPhoto = photoDialog.querySelector("[data-photo-previous]");
+const nextPhoto = photoDialog.querySelector("[data-photo-next]");
+let activeAlbum;
+let photoNumber;
+
+function showPhoto(number) {
+  photoNumber = number;
+  const label = `${albumTitle.textContent} · ${number} / ${albumSizes[activeAlbum]}`;
+  photoCaption.textContent = label;
+  photoImage.alt = label;
+  photoImage.src = `/photos/albums/${activeAlbum}-${number}.webp`;
+}
+
+function appendAlbumPhotos() {
+  const alreadyShown = albumGrid.childElementCount;
+  const limit = Math.min(alreadyShown + 4, albumSizes[activeAlbum]);
+  for (let number = alreadyShown + 1; number <= limit; number++) {
+    const thumbnail = document.createElement("button");
+    thumbnail.type = "button";
+    thumbnail.setAttribute("aria-label", `${albumTitle.textContent} · ${number}`);
+    thumbnail.setAttribute("aria-haspopup", "dialog");
+    const image = new Image(480, 360);
+    image.alt = "";
+    image.decoding = "async";
+    image.src = `/photos/albums/${activeAlbum}-${number}-thumb.webp`;
+    thumbnail.append(image);
+    thumbnail.addEventListener("click", () => {
+      showPhoto(number);
+      photoDialog.showModal();
+    });
+    albumGrid.append(thumbnail);
+  }
+  if (alreadyShown) albumGrid.children[alreadyShown]?.focus();
+  albumMore.hidden = limit === albumSizes[activeAlbum];
+}
+
+galleryTrack.querySelectorAll("[data-album]").forEach((trigger) => {
+  trigger.addEventListener("click", () => {
+    activeAlbum = trigger.dataset.album;
+    albumTitle.textContent = translations[currentLanguage][`gallery.captions.${activeAlbum}`];
+    albumGrid.replaceChildren();
+    albumDialog.showModal();
+    document.body.classList.add("is-locked");
+    appendAlbumPhotos();
+  });
+});
+albumMore.addEventListener("click", appendAlbumPhotos);
+albumDialog.addEventListener("close", () => document.body.classList.remove("is-locked"));
+photoDialog.addEventListener("close", () => photoImage.removeAttribute("src"));
+
+function stepPhoto(delta) {
+  const total = albumSizes[activeAlbum];
+  showPhoto((photoNumber - 1 + delta + total) % total + 1);
+}
+previousPhoto.addEventListener("click", () => stepPhoto(-1));
+nextPhoto.addEventListener("click", () => stepPhoto(1));
+photoDialog.addEventListener("keydown", (event) => {
+  if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+  event.preventDefault();
+  stepPhoto(event.key === "ArrowLeft" ? -1 : 1);
+});
 
 const faqButtons = [...document.querySelectorAll(".accordion-item button")];
 

@@ -283,34 +283,65 @@
         </div>
 
         <div class="gallery-track" data-gallery-track tabindex="0">
-          <figure class="gallery-card" data-work-category="gala">
-            <img src="/photos/work-corporate-gala-ai-retouched.webp" width="800" height="1000" loading="lazy" decoding="async" alt="Gala table with white flowers, glassware and candles" data-i18n-alt="gallery.alt.gala" />
-            <figcaption>
+          <button class="gallery-card" type="button" data-album="gala" aria-haspopup="dialog">
+            <img src="/photos/work-gala-cover.webp" width="800" height="1000" loading="lazy" decoding="async" alt="" />
+            <span class="gallery-card-caption">
               <span data-i18n="gallery.captions.gala">Corporate Events &amp; Galas</span>
-              <small data-i18n="gallery.credit.gala">AI-retouched photo</small>
-            </figcaption>
-          </figure>
-          <figure class="gallery-card" data-work-category="conference">
-            <img src="/photos/work-conference-ai-illustration.webp" width="800" height="1000" loading="lazy" decoding="async" alt="Illustration of a conference room set up for a panel" data-i18n-alt="gallery.alt.conference" />
-            <figcaption>
-              <span data-i18n="gallery.captions.conference">Conferences &amp; Business Meetings</span>
-              <small data-i18n="gallery.credit.conference">AI-generated illustration</small>
-            </figcaption>
-          </figure>
-          <figure class="gallery-card" data-work-category="social">
-            <img src="/photos/work-team-events-v2.webp" width="800" height="1000" loading="lazy" decoding="async" alt="Participants taking part in a team activity on an outdoor sports field" data-i18n-alt="gallery.alt.social" />
-            <figcaption>
+              <small data-i18n="gallery.openAlbum">View photos</small>
+            </span>
+          </button>
+          <button class="gallery-card" type="button" data-album="summer" aria-haspopup="dialog">
+            <img src="/photos/work-summer-cover.webp" width="800" height="1000" loading="lazy" decoding="async" alt="" />
+            <span class="gallery-card-caption">
+              <span data-i18n="gallery.captions.summer">Summer Events</span>
+              <small data-i18n="gallery.openAlbum">View photos</small>
+            </span>
+          </button>
+          <button class="gallery-card" type="button" data-album="social" aria-haspopup="dialog">
+            <img src="/photos/work-team-events-v2.webp" width="800" height="1000" loading="lazy" decoding="async" alt="" />
+            <span class="gallery-card-caption">
               <span data-i18n="gallery.captions.social">Team Events &amp; Employee Experiences</span>
-            </figcaption>
-          </figure>
-          <figure class="gallery-card" data-work-category="festive">
-            <img src="/photos/work-festive-celebrations.webp" width="800" height="1000" loading="lazy" decoding="async" alt="Stage lights and a crowd at a Christmas party" data-i18n-alt="gallery.alt.festive" />
-            <figcaption>
+              <small data-i18n="gallery.openAlbum">View photos</small>
+            </span>
+          </button>
+          <button class="gallery-card" type="button" data-album="festive" aria-haspopup="dialog">
+            <img src="/photos/work-festive-celebrations.webp" width="800" height="1000" loading="lazy" decoding="async" alt="" />
+            <span class="gallery-card-caption">
               <span data-i18n="gallery.captions.festive">Corporate Festive Celebrations</span>
-            </figcaption>
-          </figure>
+              <small data-i18n="gallery.openAlbum">View photos</small>
+            </span>
+          </button>
         </div>
       </section>
+
+      <dialog class="portfolio-dialog" data-album-dialog aria-labelledby="album-title">
+        <header class="portfolio-dialog-header">
+          <h2 id="album-title" data-album-title></h2>
+          <form method="dialog">
+            <button class="icon-button" type="submit" aria-label="Close album" data-i18n-aria-label="gallery.closeAlbum">
+              <span class="material-symbols-rounded" aria-hidden="true">close</span>
+            </button>
+          </form>
+        </header>
+        <div class="album-grid" data-album-grid></div>
+        <button class="button button-primary album-more" type="button" data-album-more data-i18n="gallery.loadMore">Load more</button>
+      </dialog>
+
+      <dialog class="portfolio-dialog photo-dialog" data-photo-dialog aria-label="Album photo" data-i18n-aria-label="gallery.photo">
+        <header class="portfolio-dialog-header">
+          <p data-photo-caption aria-live="polite"></p>
+          <form method="dialog">
+            <button class="icon-button" type="submit" aria-label="Close photo" data-i18n-aria-label="gallery.closePhoto">
+              <span class="material-symbols-rounded" aria-hidden="true">close</span>
+            </button>
+          </form>
+        </header>
+        <img data-photo-image alt="" />
+        <div class="photo-controls">
+          <button class="icon-button" type="button" data-photo-previous aria-label="Previous photo" data-i18n-aria-label="gallery.previousPhoto"><span class="material-symbols-rounded" aria-hidden="true">arrow_back</span></button>
+          <button class="icon-button" type="button" data-photo-next aria-label="Next photo" data-i18n-aria-label="gallery.nextPhoto"><span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></button>
+        </div>
+      </dialog>
 
       <section class="section services" id="services" aria-labelledby="services-title">
         <div class="container">
